@@ -1,0 +1,53 @@
+{
+  "registry": "HeadyBee Templates",
+  "version": "1.0",
+  "sourceOfTruth": "configs/services/headybee-template-registry.json",
+  "predictedSituations": ["incident-response", "digital-presence-launch", "health-check"],
+  "templates": [
+    {
+      "id": "incident-response-template",
+      "name": "Incident Response",
+      "domain": "incident-response",
+      "zone": "critical",
+      "situations": ["incident-response"],
+      "priority": 0.95,
+      "description": "Automated incident response workflow template",
+      "skills": ["alerting", "triage", "escalation"],
+      "workflows": ["detect-assess-mitigate"],
+      "nodes": ["monitor-node", "responder-node"],
+      "headyswarmTasks": ["scan", "diagnose", "remediate"],
+      "bees": ["health-bee", "ops-bee"],
+      "healthEndpoint": "/api/health/incident-response"
+    },
+    {
+      "id": "digital-presence-template",
+      "name": "Digital Presence Launch",
+      "domain": "digital-presence",
+      "zone": "production",
+      "situations": ["digital-presence-launch"],
+      "priority": 0.85,
+      "description": "Digital presence setup and launch workflow template",
+      "skills": ["deployment", "dns-config", "ssl-setup"],
+      "workflows": ["provision-configure-launch"],
+      "nodes": ["deploy-node", "cdn-node"],
+      "headyswarmTasks": ["provision", "configure", "validate"],
+      "bees": ["deployment-bee", "config-bee"],
+      "healthEndpoint": "/api/health/digital-presence"
+    },
+    {
+      "id": "health-check-template",
+      "name": "Health Check",
+      "domain": "health-monitoring",
+      "zone": "observability",
+      "situations": ["health-check", "monitoring"],
+      "priority": 0.9,
+      "description": "Health monitoring and probe template",
+      "skills": ["probing", "alerting", "reporting"],
+      "workflows": ["probe-assess-report"],
+      "nodes": ["probe-node", "aggregator-node"],
+      "headyswarmTasks": ["ping", "check", "report"],
+      "bees": ["health-bee", "telemetry-bee"],
+      "healthEndpoint": "/api/health/monitoring"
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "_meta": {
+    "name": "HCFullPipeline",
+    "version": "8.0.0",
+    "totalStages": 22,
+    "phiRef": {
+      "phi": 1.618033988749895,
+      "psi": 0.6180339887498948
+    }
+  },
+  "pipeline": {
+    "stageCount": 21,
+    "maxDuration": 76013,
+    "retryPolicy": {
+      "multiplier": 1.618,
+      "sequence": [
+        1000,
+        1618,
+        2618
+      ],
+      "maxRetries": 3,
+      "baseMs": 1000,
+      "jitterFactor": 0.382
+    },
+    "cslGates": {
+      "MINIMUM": 0.5,
+      "LOW": 0.618,
+      "MEDIUM": 0.691,
+      "HIGH": 0.809,
+      "CRITICAL": 0.882
+    }
+  },
+  "timeouts": {
+    "phi4_medium": 6854,
+    "phi5_introspection": 11090,
+    "phi6_heavy": 17944,
+    "phi7_very_heavy": 29034,
+    "phi8_extreme": 46979,
+    "phi9_pipeline_total": 76013
+  },
+  "global": {
+    "retryPolicy": {
+      "backoffMs": 1618,
+      "backoffMultiplier": 1.618033988749895,
+      "maxRetries": 3
+    },
+    "coherenceThreshold": 0.809
+  },
+  "stages": [
+    {
+      "id": 0,
+      "name": "CHANNEL_ENTRY",
+      "timeout": 4236,
+      "tokenBudget": 233,
+      "description": "Multi-channel gateway: receives requests, resolves identity, syncs cross-device context",
+      "outputs": [
+        "channel",
+        "identity",
+        "context"
+      ],
+      "required": true
+    },
+    {
+      "id": 1,
+      "name": "RECON",
+      "timeout": 6854,
+      "tokenBudget": 377,
+      "description": "Pre-action reconnaissance: maps code state, config drift, service health, attack surface",
+      "outputs": [
+        "environment_map",
+        "readiness_score"
+      ],
+      "required": true
+    },
+    {
+      "id": 2,
+      "name": "INTAKE",
+      "timeout": 4236,
+      "tokenBudget": 233,
+      "description": "Parse and normalize the incoming request into a canonical task descriptor",
+      "outputs": [
+        "task_descriptor",
+        "metadata"
+      ],
+      "required": true
+    },
+    {
+      "id": 3,
+      "name": "CLASSIFY",
+      "timeout": 2618,
+      "tokenBudget": 144,
+      "description": "Intent classification via CSL Resonance Gate: determine task type and domain",
+      "outputs": [
+        "classification",
+        "intent",
+        "domain"
+      ],
+      "required": true
+    },
+    {
+      "id": 4,
+      "name": "TRIAGE",
+      "timeout": 2618,
+      "tokenBudget": 144,
+      "description": "Priority classification and pipeline path selection: FAST, FULL, ARENA, or LEARNING",
+      "outputs": [
+        "priority",
+        "pipeline_path"
+      ],
+      "required": true
+    },
+    {
+      "id": 5,
+      "name": "DECOMPOSE",
+      "timeout": 6854,
+      "tokenBudget": 610,
+      "description": "Break complex tasks into sub-tasks with dependency ordering and cost estimation",
+      "outputs": [
+        "task_graph",
+        "cost_estimate"
+      ],
+      "required": true
+    },
+    {
+      "id": 6,
+      "name": "TRIAL_AND_ERROR",
+      "timeout": 11090,
+      "tokenBudget": 987,
+      "description": "Iterative exploration: generate candidates, test hypotheses, refine approaches",
+      "outputs": [
+        "candidates",
+        "test_results"
+      ],
+      "required": false
+    },
+    {
+      "id": 7,
+      "name": "ORCHESTRATE",
+      "timeout": 17944,
+      "tokenBudget": 1597,
+      "description": "Multi-agent orchestration: route tasks to agents, monitor execution, collect results",
+      "outputs": [
+        "agent_results",
+        "execution_plan"
+      ],
+      "required": true
+    },
+    {
+      "id": 8,
+      "name": "MONTE_CARLO",
+      "timeout": 11090,
+      "tokenBudget": 987,
+      "description": "HeadySims risk simulation: Monte Carlo plan selection and confidence scoring",
+      "outputs": [
+        "simulation_results",
+        "confidence"
+      ],
+      "required": false
+    },
+    {
+      "id": 9,
+      "name": "ARENA",
+      "timeout": 17944,
+      "tokenBudget": 1597,
+      "description": "Multi-candidate competition: battle-sim evaluation of competing solutions",
+      "outputs": [
+        "arena_results",
+        "winner"
+      ],
+      "required": false
+    },
+    {
+      "id": 10,
+      "name": "JUDGE",
+      "timeout": 6854,
+      "tokenBudget": 377,
+      "description": "Quantitative CSL scoring: correctness, safety, performance, quality, elegance",
+      "outputs": [
+        "scores",
+        "verdict"
+      ],
+      "gate": {
+        "weights": {
+          "correctness": 0.34,
+          "safety": 0.21,
+          "performance": 0.21,
+          "quality": 0.13,
+          "elegance": 0.11
+        },
+        "minPassScore": 0.618
+      },
+      "required": false
+    },
+    {
+      "id": 11,
+      "name": "APPROVE",
+      "timeout": 29034,
+      "tokenBudget": 233,
+      "description": "Human approval gate for HIGH/CRITICAL risk levels",
+      "outputs": [
+        "approval_status"
+      ],
+      "required": false
+    },
+    {
+      "id": 12,
+      "name": "EXECUTE",
+      "timeout": 29034,
+      "tokenBudget": 2584,
+      "description": "Actual execution with metacognitive gate (confidence >= 20%)",
+      "outputs": [
+        "execution_result",
+        "artifacts"
+      ],
+      "required": true
+    },
+    {
+      "id": 13,
+      "name": "VERIFY",
+      "timeout": 11090,
+      "tokenBudget": 610,
+      "description": "Post-execution validation: assertions, integrity checks, output verification",
+      "outputs": [
+        "verification_result",
+        "issues"
+      ],
+      "required": true
+    },
+    {
+      "id": 14,
+      "name": "SELF_AWARENESS",
+      "timeout": 6854,
+      "tokenBudget": 377,
+      "description": "Metacognitive assessment: system state, confidence calibration, bias detection",
+      "outputs": [
+        "awareness_report",
+        "confidence"
+      ],
+      "required": true
+    },
+    {
+      "id": 15,
+      "name": "SELF_CRITIQUE",
+      "timeout": 6854,
+      "tokenBudget": 377,
+      "description": "Self-critique loop: evaluate own reasoning, identify weaknesses, suggest improvements",
+      "outputs": [
+        "critique_report",
+        "improvements"
+      ],
+      "required": true
+    },
+    {
+      "id": 16,
+      "name": "MISTAKE_ANALYSIS",
+      "timeout": 6854,
+      "tokenBudget": 377,
+      "description": "Root cause analysis of errors: pattern matching, failure classification, learning extraction",
+      "outputs": [
+        "root_causes",
+        "learnings"
+      ],
+      "required": true
+    },
+    {
+      "id": 17,
+      "name": "OPTIMIZATION_OPS",
+      "timeout": 11090,
+      "tokenBudget": 610,
+      "description": "Cost profiling, bottleneck diagnosis, performance optimization recommendations",
+      "outputs": [
+        "optimizations",
+        "cost_report"
+      ],
+      "required": true
+    },
+    {
+      "id": 18,
+      "name": "CONTINUOUS_SEARCH",
+      "timeout": 17944,
+      "tokenBudget": 987,
+      "description": "Ongoing exploration: public domain inspiration, best practice mining, pattern discovery",
+      "outputs": [
+        "discoveries",
+        "patterns"
+      ],
+      "required": false
+    },
+    {
+      "id": 19,
+      "name": "EVOLUTION",
+      "timeout": 17944,
+      "tokenBudget": 987,
+      "description": "Controlled mutation: canary rollout of improvements (1% -> 5% -> 20% -> 100%)",
+      "outputs": [
+        "mutations",
+        "rollout_plan"
+      ],
+      "required": false
+    },
+    {
+      "id": 20,
+      "name": "RECEIPT",
+      "timeout": 4236,
+      "tokenBudget": 144,
+      "description": "Ed25519 trust receipt emission: sign results, persist audit trail, emit completion event",
+      "outputs": [
+        "receipt",
+        "signature"
+      ],
+      "required": true
+    },
+    {
+      "id": 21,
+      "name": "DISTILLER",
+      "timeout": 6854,
+      "tokenBudget": 377,
+      "description": "HeadyDistiller: compress and distill learnings into reusable knowledge artifacts",
+      "outputs": [
+        "distilled_knowledge",
+        "artifacts"
+      ],
+      "required": true
+    }
+  ],
+  "variants": {
+    "FAST_PATH": {
+      "stages": [
+        0,
+        1,
+        2,
+        7,
+        12,
+        13,
+        20
+      ]
+    },
+    "FULL_PATH": {
+      "stages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "ARENA_PATH": {
+      "stages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        20
+      ]
+    },
+    "LEARNING_PATH": {
+      "stages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  "pools": {
+    "llm_tokens": {
+      "tiers": {
+        "working": 8192,
+        "session": 21433
+      }
+    },
+    "concurrent_requests": {
+      "perNode": {
+        "hot": 8,
+        "warm": 5,
+        "cold": 3
+      }
+    },
+    "bee_workers": {
+      "default": 8,
+      "max": 21,
+      "ttl": 89
+    },
+    "concurrent_requests_global": {
+      "max": 55,
+      "default": 21
+    },
+    "cost_usd": {
+      "max": 34
+    }
+  },
+  "fullAutoMode": {
+    "enabled": true,
+    "coherenceFloor": 0.618,
+    "requiresJudgeGate": true,
+    "tokenBudgetWarningAt": 0.764,
+    "tokenBudgetCriticalAt": 0.854,
+    "tokenBudgetHardStopAt": 0.91
+  },
+  "errorHandling": {
+    "retryableErrors": [
+      "TIMEOUT",
+      "RATE_LIMIT",
+      "TRANSIENT",
+      "CONNECTION_RESET"
+    ],
+    "fatalErrors": [
+      "SAFETY_VIOLATION",
+      "AUTH_FAILURE",
+      "DATA_CORRUPTION"
+    ],
+    "maxCascadeDepth": 5,
+    "onStageFailure": {
+      "retryPolicy": {
+        "multiplier": 1.618,
+        "sequence": [
+          1000,
+          1618,
+          2618
+        ],
+        "maxRetries": 3
+      }
+    },
+    "onStepFailure": {
+      "retryPolicy": {
+        "multiplier": 1.618,
+        "sequence": [
+          1000,
+          1618,
+          2618
+        ],
+        "maxRetries": 3
+      }
+    }
+  }
+}

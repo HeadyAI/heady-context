@@ -1,0 +1,9 @@
+{
+  "policy": "HeadyBee Optimization",
+  "version": "1.0",
+  "rules": [],
+  "thresholds": {
+    "minReadiness": 0.618,
+    "maxLatency": 5000
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "generatedAt": "2026-03-22T20:34:14.770Z",
+  "policyVersion": 1,
+  "health": {
+    "endpoint": "/api/antigravity/health",
+    "status": "healthy",
+    "workspaceMode": "3d-vector",
+    "gateway": "heady",
+    "autonomousMode": "optimized-autonomous"
+  },
+  "enforcedGateway": "heady",
+  "workspaceMode": "3d-vector",
+  "autonomousMode": "optimized-autonomous",
+  "optimizationReportHash": "a7886b271fff057b9c6bc2ef7eca4858dccbce3ea5c8445bdd2b42d896296e33",
+  "topTemplates": [
+    {
+      "id": "deploy-standard",
+      "score": 0
+    },
+    {
+      "id": "deploy-canary",
+      "score": 0
+    },
+    {
+      "id": "review-security",
+      "score": 0
+    },
+    {
+      "id": "optimize-perf",
+      "score": 0
+    },
+    {
+      "id": "launch-presence",
+      "score": 0
+    }
+  ],
+  "samplePlan": {
+    "enforced": true,
+    "gateway": "heady",
+    "workspaceMode": "3d-vector",
+    "autonomousMode": "optimized-autonomous",
+    "operation": {
+      "initiatedBy": "owner",
+      "source": "antigravity",
+      "task": "autonomous-runtime-sync",
+      "situation": "autonomous-deploy",
+      "metadata": {
+        "initiatedBySystem": true
+      }
+    },
+    "selectedTemplates": [
+      {
+        "id": "deploy-standard",
+        "name": "Standard Deploy",
+        "type": "deploy",
+        "situations": [
+          "autonomous-deploy",
+          "digital-presence-launch"
+        ],
+        "skills": [
+          "deploy",
+          "monitor",
+          "rollback"
+        ],
+        "workflows": [
+          "ci-cd-pipeline"
+        ],
+        "nodes": [
+          "HeadyConductor",
+          "HeadyBee"
+        ],
+        "headyswarmTasks": [
+          "vector-bootstrap",
+          "deploy-execute"
+        ],
+        "healthEndpoint": "/api/deploy/health",
+        "successRate": 0.95,
+        "avgDuration": 12000,
+        "usageCount": 150,
+        "complexity": 3,
+        "optimizationScore": 0
+      },
+      {
+        "id": "deploy-canary",
+        "name": "Canary Deploy",
+        "type": "deploy",
+        "situations": [
+          "autonomous-deploy"
+        ],
+        "skills": [
+          "deploy",
+          "canary-test",
+          "rollback"
+        ],
+        "workflows": [
+          "canary-pipeline"
+        ],
+        "nodes": [
+          "HeadyConductor",
+          "HeadyArena"
+        ],
+        "headyswarmTasks": [
+          "canary-bootstrap",
+          "deploy-execute"
+        ],
+        "healthEndpoint": "/api/canary/health",
+        "successRate": 0.92,
+        "avgDuration": 18000,
+        "usageCount": 80,
+        "complexity": 5,
+        "optimizationScore": 0
+      },
+      {
+        "id": "optimize-perf",
+        "name": "Performance Optimizer",
+        "type": "optimize",
+        "situations": [
+          "performance-optimization",
+          "autonomous-deploy"
+        ],
+        "skills": [
+          "profile",
+          "optimize",
+          "benchmark"
+        ],
+        "workflows": [
+          "perf-optimization-pipeline"
+        ],
+        "nodes": [
+          "HeadyBee",
+          "HeadyHealth"
+        ],
+        "headyswarmTasks": [
+          "profile-execute",
+          "optimize-apply"
+        ],
+        "healthEndpoint": "/api/perf/health",
+        "successRate": 0.88,
+        "avgDuration": 25000,
+        "usageCount": 60,
+        "complexity": 7,
+        "optimizationScore": 0
+      }
+    ],
+    "requiredSwarmTasks": [
+      "vector-context-bootstrap",
+      "template-selection",
+      "autonomous-execution",
+      "projection-sync",
+      "post-op-learning-ingest"
+    ],
+    "vectorWorkspace": {
+      "enabled": true,
+      "dimensions": 3,
+      "zoneRouting": true,
+      "instantExecution": true
+    }
+  }
+}

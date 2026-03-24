@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+offline-packages/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temp
+tmp/
+.tmp/
+
+# Secrets & Credentials — NEVER commit these
+configs/secrets/
+**/secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*-credentials.md
+*-credentials.json
+*service-account*.json
+*gen-lang-client*.json
+configs/sentry-dsn-map.json
+configs/sentry-dsn-registry.json

@@ -1,0 +1,126 @@
+{
+  "_note": "Stripe Billing Registry — Heady Sovereign AI Platform.",
+  "_created": "2026-03-19",
+  "_updated": "2026-03-21",
+  "payment_links": {
+    "developer_monthly": {
+      "link_id": "plink_1TDVwz7edJeDouhQfZeNMo8y",
+      "url": "https://buy.stripe.com/bJe00dfZl9aQfL195t87K0f",
+      "tier": "developer",
+      "interval": "month"
+    },
+    "team_monthly": {
+      "link_id": "plink_1TDVwz7edJeDouhQN0fqtnwK",
+      "url": "https://buy.stripe.com/8x24gt3cz0Ek8izdlJ87K0e",
+      "tier": "team",
+      "interval": "month"
+    },
+    "enterprise_monthly": {
+      "link_id": "plink_1TDVwz7edJeDouhQlDuSOquS",
+      "url": "https://buy.stripe.com/bJe14hcN95YEeGXdlJ87K0d",
+      "tier": "enterprise",
+      "interval": "month"
+    }
+  },
+  "coupons": {
+    "annual_fibonacci_21": {
+      "coupon_id": "y03TtMq1",
+      "name": "Heady Annual — Fibonacci 21% Discount",
+      "percent_off": 21,
+      "duration": "once",
+      "phi_note": "fib(8) = 21 — Fibonacci-derived discount percentage"
+    }
+  },
+  "products": {
+    "developer": {
+      "name": "Heady Developer",
+      "product_id": "prod_UAyyzjtPdufhZn",
+      "description": "Developer tier — API access, 100K tokens/month, community support, single user",
+      "prices": {
+        "monthly": {
+          "price_id": "price_1TCd0W7edJeDouhQi49Vts6c",
+          "amount_cents": 2900,
+          "currency": "usd",
+          "interval": "month"
+        },
+        "annual": {
+          "price_id": "price_1TCd0y7edJeDouhQJ8RmrbEc",
+          "amount_cents": 29000,
+          "currency": "usd",
+          "interval": "year",
+          "savings_pct": "16.7%"
+        }
+      },
+      "features": [
+        "API access (100K tokens/month)",
+        "Community support",
+        "Single user",
+        "HeadyMCP tool access",
+        "Basic analytics"
+      ]
+    },
+    "team": {
+      "name": "Heady Team",
+      "product_id": "prod_UAyyJHo95Ng1oj",
+      "description": "Team tier — Full API access, 1M tokens/month per seat, priority support",
+      "prices": {
+        "monthly": {
+          "price_id": "price_1TCd0W7edJeDouhQHLFrAJcM",
+          "amount_cents": 9900,
+          "currency": "usd",
+          "interval": "month",
+          "per_seat": true
+        },
+        "annual": {
+          "price_id": "price_1TCd0y7edJeDouhQLlDE3WDz",
+          "amount_cents": 99000,
+          "currency": "usd",
+          "interval": "year",
+          "per_seat": true,
+          "savings_pct": "16.7%"
+        }
+      },
+      "features": [
+        "Full API access (1M tokens/month/seat)",
+        "Priority support",
+        "Team dashboard",
+        "Shared workspaces",
+        "Advanced analytics",
+        "HeadyBuddy integration",
+        "Custom webhooks"
+      ]
+    },
+    "enterprise": {
+      "name": "Heady Enterprise",
+      "product_id": "prod_UAyyk4NBRAMuKX",
+      "description": "Enterprise tier — Unlimited API, dedicated infrastructure, SLA guarantees",
+      "prices": {
+        "monthly": {
+          "price_id": "price_1TCd0W7edJeDouhQ2dU62NhH",
+          "amount_cents": 49900,
+          "currency": "usd",
+          "interval": "month"
+        },
+        "annual": {
+          "price_id": "price_1TCd0y7edJeDouhQ9f0mdwNd",
+          "amount_cents": 499000,
+          "currency": "usd",
+          "interval": "year",
+          "savings_pct": "16.7%"
+        }
+      },
+      "features": [
+        "Unlimited API access",
+        "Dedicated infrastructure",
+        "99.9% SLA guarantee",
+        "Custom integrations",
+        "SSO / SAML",
+        "Audit logging",
+        "Dedicated account manager",
+        "Private vector memory",
+        "Custom model fine-tuning",
+        "On-premise option"
+      ]
+    }
+  }
+}

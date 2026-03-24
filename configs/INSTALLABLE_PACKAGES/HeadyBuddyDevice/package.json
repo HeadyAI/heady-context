@@ -1,0 +1,90 @@
+{
+    "name": "HeadyBuddyDevice",
+    "version": "3.457890",
+    "versionTag": "v3457890",
+    "description": "HeadyBuddy Cross-Device Install Package — Cloud-Connected Thin Client",
+    "author": "HeadySystems Inc.",
+    "license": "Proprietary",
+    "architecture": "cloud-orchestrated-thin-client",
+    "cloudApi": "https://headyme.com/api",
+    "swarmEndpoint": "wss://headyme.com/swarm",
+    "localResources": "minimal (UI shell only)",
+    "opsLocation": "cloud (HeadyBees swarm)",
+    "targets": {
+        "linux-mini-computer": {
+            "installer": "installers/install-linux.sh",
+            "method": "shell script",
+            "output": "~/.heady/ (thin client + desktop entry + systemd service)",
+            "launcher": "heady-buddy command or desktop icon"
+        },
+        "ubuntu": {
+            "installer": "installers/install-ubuntu.sh",
+            "method": "shell script",
+            "artifact": "HeadyBuddy.deb",
+            "launcher": "HeadyBuddy desktop icon or heady-buddy command"
+        },
+        "debian": {
+            "installer": "installers/install-debian.sh",
+            "method": "shell script",
+            "artifact": "HeadyBuddy.deb",
+            "launcher": "HeadyBuddy desktop icon or heady-buddy command"
+        },
+        "macos": {
+            "installer": "installers/install-macos.sh",
+            "method": "shell script",
+            "artifact": "HeadyBuddy.dmg",
+            "launcher": "~/Applications/HeadyBuddy.app"
+        },
+        "windows-laptop": {
+            "installer": "installers/Install-Heady.ps1",
+            "bootstrap": "installers/Install-Heady.cmd",
+            "method": "PowerShell",
+            "artifact": "HeadyBuddySetup.exe",
+            "output": "%LOCALAPPDATA%\\HeadyBuddy (thin client + shortcuts)",
+            "launcher": "Desktop shortcut or Start Menu → HeadySystems → HeadyBuddy"
+        },
+        "oneplus-open-android": {
+            "installer": "installers/setup-android.sh",
+            "build": "installers/build-android-apk.sh",
+            "method": "PWA install via Chrome or ADB sideload",
+            "artifact": "HeadyBuddy.apk",
+            "output": "PWA on home screen or /sdcard/HeadyBuddy/",
+            "features": [
+                "foldable-support",
+                "front-screen",
+                "flex-mode"
+            ]
+        }
+    },
+    "beeSwarm": {
+        "provisionerBee": "src/bees/device-provisioner-bee.js",
+        "totalBees": 35,
+        "swarmTasks": [
+            "detect-platform",
+            "fs-authorize",
+            "install-core",
+            "install-mods",
+            "verify"
+        ],
+        "parallelism": "phi-optimized"
+    },
+    "mods": {
+        "bundled": 8,
+        "autoEnabled": 5,
+        "available": 3,
+        "installMethod": "cloud-pushed"
+    },
+    "ui": {
+        "panels": [
+            "chat",
+            "filesystem",
+            "mods",
+            "swarm",
+            "settings"
+        ],
+        "theme": "sacred-geometry",
+        "deliverySurface": "HeadyWeb default",
+        "responsive": true,
+        "pwa": true
+    }
+}

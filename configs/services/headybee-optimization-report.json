@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "topTemplates": [
+    "default-swarm",
+    "high-throughput",
+    "low-latency"
+  ],
+  "registryHash": "995db2f8614fdcc1965db4d4080c7719426d7865964f006fc86d0833a2bca81a",
+  "generatedAt": "2026-03-22T20:34:13.527Z"
+}
