@@ -19,12 +19,12 @@ Upload all 6 files below as sources in your NotebookLM notebook for a super comp
 
 ## GitHub Raw URLs
 ```
-https://raw.githubusercontent.com/HeadyAI/Heady/main/docs/notebook-sources/01-heady-executive-overview.md
-https://raw.githubusercontent.com/HeadyAI/Heady/main/docs/notebook-sources/02-heady-apex-trading-intelligence.md
-https://raw.githubusercontent.com/HeadyAI/Heady/main/docs/notebook-sources/03-heady-ip-portfolio-and-valuation.md
-https://raw.githubusercontent.com/HeadyAI/Heady/main/docs/notebook-sources/04-heady-service-catalog-and-capabilities.md
-https://raw.githubusercontent.com/HeadyAI/Heady/main/docs/notebook-sources/05-heady-architecture-and-patterns.md
-https://raw.githubusercontent.com/HeadyAI/Heady/main/docs/notebook-sources/06-heady-infrastructure-and-operations.md
+https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/01-heady-executive-overview.md
+https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/02-heady-apex-trading-intelligence.md
+https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/03-heady-ip-portfolio-and-valuation.md
+https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/04-heady-service-catalog-and-capabilities.md
+https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/05-heady-architecture-and-patterns.md
+https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/06-heady-infrastructure-and-operations.md
 ```
 
 ## Video/Audio Prompt Ideas

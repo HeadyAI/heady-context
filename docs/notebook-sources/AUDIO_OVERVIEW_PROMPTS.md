@@ -239,6 +239,281 @@ archetype scores low — the system actually pauses and seeks more information.
 
 ---
 
+## NON-TECHNICAL PROMPTS — For Investors, Executives, and General Audiences
+
+> These prompts avoid jargon entirely. They tell the Heady story through human themes: ambition, identity, ownership, and why this matters beyond code.
+
+---
+
+### 13. 🎙️ WHY ONE PERSON BUILT THEIR OWN AI
+
+```
+Have a real, honest conversation about why someone would decide to build
+their own AI instead of just using ChatGPT or Google Gemini. Eric Haywood
+looked at the entire AI industry and said: I don't want to rent intelligence
+from a corporation. I want to OWN it. Talk about what that actually means
+for regular people. When you use someone else's AI, they see every question
+you ask, every document you upload, every idea you explore. Eric decided
+that was unacceptable. So he built an AI that belongs to him — and
+eventually, one that anyone can own for themselves. Discuss what it feels
+like to bet your entire career on an idea that trillion-dollar companies
+are also chasing. Is that courage, madness, or vision? Probably all three.
+```
+
+---
+
+### 14. 🎙️ THE AI THAT REMEMBERS EVERYTHING
+
+```
+Explain Heady to someone who has never heard of it, using zero technical
+language. Here's the pitch: imagine an AI assistant that never forgets
+anything you've ever told it. Not just your last conversation — everything.
+Every preference, every project, every decision you made six months ago.
+It learns how you think, how you write, what annoys you, what excites
+you. Over time it becomes a digital version of your working style. Now
+imagine that AI also takes care of itself. It monitors its own health.
+If something breaks at 3am, it fixes itself before you wake up. No IT
+department needed. That's Heady. Discuss why "permanent memory" is the
+feature that changes everything about how people will use AI.
+```
+
+---
+
+### 15. 🎙️ WHAT IF YOUR AI COULD THINK LIKE YOU?
+
+```
+Talk about the idea of a "digital twin" for the way someone thinks. Not
+a chatbot that sounds like you — an AI that actually understands your
+decision-making patterns. You show it enough of your work, your emails,
+your choices, and eventually it can draft things the way you would draft
+them. It prioritizes what you would prioritize. It flags what you would
+flag. Discuss why this is different from autocomplete or templates. This
+is about capturing cognitive style, not just vocabulary. Ask whether this
+is exciting or unsettling — and land on: it's both, and that's exactly
+why it matters. Eric built this because he wanted his AI to feel like an
+extension of his own mind, not a stranger he has to re-explain everything
+to every single day.
+```
+
+---
+
+### 16. 🎙️ 51 PATENTS AND ONE PERSON — The IP Story
+
+```
+Have a conversation that would make a venture capitalist sit up straight.
+One developer. No funding. No engineering team. 51 patent applications
+filed. Not ideas on a napkin — actual working code behind every single
+one. Discuss what patents mean in the AI gold rush: while every big
+company is racing to build similar technology, this solo founder already
+has legal protection on approaches they haven't even thought of yet.
+Talk about what happens when a large company eventually wants to build
+what Heady already patented. They have three choices: license it, buy
+the company, or find a completely different approach. That's the power
+of intellectual property. 51 patents isn't just impressive for one
+person — it would be impressive for a company of 500.
+```
+
+---
+
+### 17. 🎙️ SELF-DRIVING AI — Why It Matters for Normal People
+
+```
+Everyone understands self-driving cars. Now apply that concept to AI
+itself. Today, when software breaks, a human engineer has to wake up,
+diagnose the problem, write a fix, and deploy it. Heady does all of
+that by itself. The AI monitors its own systems. It detects when
+something isn't working right. It creates a fix. It tests the fix.
+It deploys the fix. Then it writes a report about what happened. All
+while you sleep. Discuss why this matters beyond just convenience:
+it means a small company or even one person can run infrastructure
+that normally requires an entire IT department. Talk about how this
+levels the playing field between solo founders and big corporations.
+The AI doesn't need a salary, doesn't take vacation, and doesn't
+get tired at 3am.
+```
+
+---
+
+### 18. 🎙️ NATURE AS BLUEPRINT — The Sunflower Connection
+
+```
+Tell the story of how patterns in nature became the actual design
+principles for an AI platform — and make it accessible to anyone.
+Sunflowers arrange their seeds in spirals that follow a specific
+mathematical ratio called the golden ratio. Honeycombs are hexagons
+because that's the most efficient shape for storing honey. DNA spirals
+in a double helix because that's the most stable way to store genetic
+information. Eric looked at these patterns and asked: what if software
+followed these same rules? What if the timing between retries followed
+the golden ratio? What if data was stored in geometric patterns instead
+of flat tables? Discuss how this isn't mystical — it's mathematical.
+Nature optimized these patterns over billions of years. Eric is applying
+them to AI. Let the audience decide if that's genius or just beautiful.
+```
+
+---
+
+### 19. 🎙️ YOUR DATA STAYS YOURS — AI Ownership in 2026
+
+```
+Have a serious conversation about who owns your AI interactions. When
+you use ChatGPT, your conversations train OpenAI's models. When you
+use Google Gemini, your data improves Google's products. You're not
+the customer — you're the product. Eric built Heady with a completely
+different philosophy: your data is yours. Period. Your memories, your
+preferences, your conversation history — it stays sovereign to you.
+Discuss what "sovereign AI" means in plain language: it means no
+corporation can read your prompts, sell your patterns, or use your
+creativity to train their next model. Talk about why this matters
+more than most people realize. Your AI conversations reveal how you
+think, what you're worried about, what you're planning. That's intimate
+data. Heady treats it that way.
+```
+
+---
+
+### 20. 🎙️ THE ECONOMICS — How One Person Replaces an Engineering Team
+
+```
+Break down the business model for a non-technical audience. Traditional
+software companies spend millions on engineering teams — salaries,
+benefits, offices, management. Heady replaces most of that with AI
+agents that work 24/7 for the cost of cloud computing. Discuss the
+real numbers: running 297 cloud services costs a fraction of what a
+single senior engineer's salary would be in San Francisco. Talk about
+the pricing model: free tier for students and nonprofits. Pro at 12
+dollars per month. Enterprise for larger organizations. 75 percent
+off for nonprofits worldwide. Purchasing-power-parity pricing so
+someone in Lagos pays differently than someone in London. This isn't
+just a tech story — it's an economics story about how AI is making
+it possible for one brilliant person to compete with companies that
+have thousands of employees.
+```
+
+---
+
+### 21. 🎙️ THE CHROME EXTENSION ANYONE CAN USE
+
+```
+Start with the most relatable entry point into Heady: HeadyBuddy, a
+Chrome extension that lives in your browser toolbar. No installation
+wizard. No command line. No coding required. You click it, and you
+have access to an AI that can summarize any webpage you're reading,
+write emails in your style, generate code, analyze documents, and
+connect to over 30 AI services through a single interface. Discuss
+why this matters for accessibility: most powerful AI tools require
+technical knowledge to set up and use. HeadyBuddy puts enterprise-
+grade AI in the hands of teachers, small business owners, writers,
+students — anyone with a web browser. Talk about how this is the
+"front door" to the entire Heady ecosystem. You start with a simple
+browser extension, and behind it is a 297-service platform with 51
+patents. But the user never needs to know that.
+```
+
+---
+
+### 22. 🎙️ GOOGLE HAS 180,000 EMPLOYEES — The David vs Goliath Reality
+
+```
+Put the competition in perspective using numbers anyone can
+understand. Google: 180,000 employees, 300 billion in revenue.
+OpenAI: 10 billion in funding, 1,500 employees. Anthropic: 7
+billion in funding, 1,000 employees. Heady: one person, zero
+outside funding, 51 patents. Have an honest conversation about
+whether this is inspiring or delusional — and explain why the
+answer is "inspiring." The patents are real. The code works. The
+platform runs in 142 countries. And here's the twist: Eric used
+AI ITSELF as his engineering team. Claude made 191 commits.
+Multiple AI agents contributed architecture, documentation, and
+optimization. This might be the first company in history where
+AI agents are literally the co-founders. Discuss what that means
+for the future: will the startup of 2027 be one visionary person
+with five AI agents instead of fifty engineers?
+```
+
+---
+
+### 23. 🎙️ WHAT HAPPENS TO YOUR KNOWLEDGE WHEN YOU'RE GONE?
+
+```
+Have a thoughtful, almost philosophical conversation about digital
+legacy. Every person accumulates a lifetime of knowledge — how they
+make decisions, what patterns they recognize, what wisdom they've
+earned through experience. When that person retires or passes away,
+all of that knowledge disappears. Heady is building something
+different: a system that preserves how someone thinks. Not just
+their documents, but their decision-making patterns, their
+communication style, their priorities. Discuss the implications:
+a retiring executive whose AI remembers 20 years of institutional
+knowledge. A mentor whose thinking patterns can guide students
+long after they've moved on. This isn't about replacing people —
+it's about preserving what makes them valuable. Ask whether this
+is beautiful or uncomfortable. The best answer is that it's both.
+```
+
+---
+
+### 24. 🎙️ NOT REPLACEMENT, PARTNERSHIP — The Human+AI Philosophy
+
+```
+Address the biggest fear people have about AI: that it will replace
+them. Eric built Heady with the opposite philosophy. Every design
+decision in Heady puts the human at the center. The AI doesn't make
+decisions FOR you — it makes decisions WITH you. It presents options,
+explains its reasoning, and waits for your judgment on anything
+important. Discuss the "Human-in-the-Loop" concept in plain language:
+for any high-stakes action, Heady requires a human to approve it.
+You can see how the AI reached its conclusion. You can override it
+at any moment. The goal isn't to automate human judgment away — it's
+to give every person a brilliant partner who works tirelessly, never
+forgets context, and never gets ego about being overruled. Talk about
+why this philosophy might actually be more commercially valuable than
+full automation. People WANT to stay in control.
+```
+
+---
+
+### 25. 🎙️ THE 10-YEAR AI — What Permanence Means
+
+```
+Imagine an AI that has known you for ten years. It remembers your
+first project together. It knows which approaches you tried and
+abandoned. It recalls the advice you gave a colleague in 2028. It's
+watched your thinking evolve over a decade. Now compare that to
+today's AI: every conversation starts from zero. You re-explain
+context every single time. You lose continuity every time you close
+a tab. Eric is building for permanence in a world of disposable
+interactions. Discuss why this changes everything: an AI with ten
+years of context doesn't just answer questions — it anticipates
+them. It doesn't just follow instructions — it understands why
+you're giving them. Talk about the emotional dimension too. People
+form relationships with persistent systems. An AI that remembers
+you becomes something different from a tool — it becomes a partner.
+```
+
+---
+
+### 26. 🎙️ POST-APP WORLD — Why the Future Isn't 50 Apps on Your Phone
+
+```
+Paint a picture of where technology is heading that anyone can
+understand. Right now, people use dozens of apps: one for email,
+one for notes, one for spreadsheets, one for scheduling, one for
+chat, one for project management. Each one has its own login, its
+own learning curve, its own subscription. Eric's vision is that all
+of this collapses into one persistent intelligence. You don't open
+an email app — you tell your AI to handle your correspondence. You
+don't open a spreadsheet — you ask your AI to analyze the numbers.
+The AI becomes the interface to everything. Discuss why this isn't
+science fiction: the building blocks already exist in Heady. 64
+tools accessible through one system. 30 AI providers. Document
+analysis, code generation, web browsing, trading, content creation.
+The app economy is a transition phase. The destination is one AI
+that does everything, remembers everything, and belongs to you.
+```
+
+---
+
 ## Usage
 
 1. Open **Heady Ecosystem** notebook in [NotebookLM](https://notebooklm.google.com/)
@@ -251,3 +526,7 @@ archetype scores low — the system actually pauses and seeks more information.
 **Eric's Story Arc:** 1 → 3 → 4 → 2
 **Technical Deep Dive:** 9 → 6 → 5 → 7
 **Business & Vision:** 8 → 11 → 10 → 12
+**Non-Technical Introduction:** 14 → 13 → 17 → 21
+**Investor Pitch:** 16 → 20 → 22 → 26
+**Philosophy & Future:** 15 → 23 → 24 → 25
+**Nature & Trust:** 18 → 19
