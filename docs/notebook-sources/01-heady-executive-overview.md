@@ -2,10 +2,10 @@
 **Version:** 8.0 | **Updated:** March 24, 2026 | **Owner:** Eric Haywood | **Status:** Live Production
 
 ## Company Overview
-**HeadySystems Inc.** builds the world's first Liquid Latent Operating System — an intelligent, parallel, dynamically distributed, self-aware, self-optimizing, and secure execution environment for AI workloads. Hybrid nonprofit (HeadyConnection 501(c)(3)) / C-Corp (HeadySystems Inc.) structure for wealth redistribution and global wellbeing. The Sacred Geometry architecture is patented across 60+ provisional patent applications.
+**HeadySystems Inc.** builds the world's first Liquid Latent Operating System — an intelligent, parallel, dynamically distributed, self-aware, self-optimizing, and secure execution environment for AI workloads. Hybrid nonprofit (HeadyConnection 501(c)(3)) / C-Corp (HeadySystems Inc.) structure for wealth redistribution and global wellbeing. The Sacred Geometry architecture is patented across 51 provisional patent applications.
 
 **Valuation:** $4.87M (Series A readiness)
-**Patent Portfolio:** 60+ provisional applications (HS-001 through HS-062+)
+**Patent Portfolio:** 60+ provisional applications (HS-001 through HS-062)
 **Trademark:** HEADY — Serial 99680540 (Classes 9 & 42)
 
 ## The Instantaneous Architecture (Rule #1)
@@ -62,7 +62,7 @@ Every response passes through ALL cognitive lenses simultaneously: OWL (Wisdom),
 | Autonomous swarms | 17 (89 bees) |
 | Swarm/bee source files | 316 |
 | CSL geometric gates | 8 |
-| Provisional patents | 60+ |
+| Provisional patents | 51 |
 | Agent skills | 60+ |
 | MCP tools | 64 |
 | AI providers | 6 (OpenAI, Anthropic, Google, Groq, Perplexity, HuggingFace) |

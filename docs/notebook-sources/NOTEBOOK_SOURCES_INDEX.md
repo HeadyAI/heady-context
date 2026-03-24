@@ -10,7 +10,7 @@ Upload all 6 files below as sources in your NotebookLM notebook for a super comp
 |---|------|-------|------|
 | 1 | `01-heady-executive-overview.md` | Company, domains, metrics, underdog story, team | ~4KB |
 | 2 | `02-heady-apex-trading-intelligence.md` | Trading engine, FinOps, quantitative strategies | ~6KB |
-| 3 | `03-heady-ip-portfolio-and-valuation.md` | 60+ patents, VALU Tensor, valuation, trademark | ~5KB |
+| 3 | `03-heady-ip-portfolio-and-valuation.md` | 51 patents, VALU Tensor, valuation, trademark | ~5KB |
 | 4 | `04-heady-service-catalog-and-capabilities.md` | 297 services, 64 MCP tools, 60+ skills, AI providers | ~6KB |
 | 5 | `05-heady-architecture-and-patterns.md` | 22-stage pipeline, CSL gates, swarm matrix, microkernel | ~8KB |
 | 6 | `06-heady-infrastructure-and-operations.md` | 16 remotes, GCP/Cloudflare, audit fabric, CI/CD, sprint stats | ~7KB |
@@ -50,4 +50,4 @@ https://raw.githubusercontent.com/HeadyAI/Heady/main/docs/notebook-sources/06-he
 - NEW: VALU Tensor Core patent
 - NEW: Infrastructure & Operations source document
 - NEW: March 20-24 consolidation sprint stats (1,431 commits, 53K files)
-- Patent count: 51+ → **60+**
+- Patent count: 51 patents
