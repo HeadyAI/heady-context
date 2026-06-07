@@ -142,10 +142,3 @@ All system timing derives from φ (1.6180339887):
 | Cold | 13% | Ingestion, analytics |
 | Reserve | 8% | Burst capacity |
 | Governance | 5% | Quality gates, audit |
-
----
-
-## Theoretical Foundation
-
-- **[MICROKERNEL_ARCHITECTURE.md](MICROKERNEL_ARCHITECTURE.md)** — seL4/QNX/MINIX3 microkernel theory mapping to this topology, φ-competitive scheduling, MCP ecosystem governance (12,230+ servers), Streamable HTTP transport, multi-armed bandit LLM routing
-- **[sovereign-heady-blueprint.md](sovereign-heady-blueprint.md)** — Full sovereign ecosystem specification (six-layer zero-trust mesh, 17-Swarm Matrix, CSL engine)

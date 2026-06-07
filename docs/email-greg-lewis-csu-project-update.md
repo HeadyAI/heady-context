@@ -30,15 +30,15 @@
 ---
 
 **To:** Greg Lewis, Colorado State University  
-**From:** Eric H., HeadySystems  
+**From:** Eric H., Heady Systems  
 **Date:** February 6, 2026  
-**Subject:** HeadySystems — Project Status Update & Overview
+**Subject:** Heady Systems — Project Status Update & Overview
 
 ---
 
 Hi Greg,
 
-I wanted to reach out with a current-state overview of the HeadySystems project. There's been significant progress, and I think the architecture and direction will be of real interest given our previous conversations.
+I wanted to reach out with a current-state overview of the Heady Systems project. There's been significant progress, and I think the architecture and direction will be of real interest given our previous conversations.
 
 ## What Heady Is
 
@@ -104,7 +104,7 @@ The chat engine currently uses a placeholder response system — the next milest
 
 I recently compiled a detailed competitive analysis (attached separately if useful). The short version:
 
-| | GitHub Copilot Enterprise | Cursor Business | Devin | **HeadySystems** |
+| | GitHub Copilot Enterprise | Cursor Business | Devin | **Heady Systems** |
 |---|---|---|---|---|
 | **Annual / 100 devs** | $46,800–$72,000 | ~$48,000 | $600,000+ | **~$2,400–$6,000** |
 | **Pricing model** | Per-seat | Per-seat | Per-seat | **Infrastructure-based** |
@@ -139,7 +139,7 @@ I'd love to walk you through a live demo or discuss how this might align with an
 
 Best regards,  
 **Eric H.**  
-HeadySystems  
+Heady Systems  
 *Sacred Geometry :: Organic Systems :: Breathing Interfaces*
 
 ---

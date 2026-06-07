@@ -869,7 +869,7 @@
   "pwa": [
     {
       "id": "heady-pwa",
-      "name": "HeadySystems PWA",
+      "name": "Heady Systems PWA",
       "type": "progressive-web-app",
       "version": "3.0.0",
       "sourceOfTruth": "public/manifest.webmanifest",

@@ -147,7 +147,7 @@ module.exports = { domain, description, priority, getWork };
 /**
  * ─── Patent Concept Registry ──────────────────────────────────
  * 
- * The definitive IP registry for HeadySystems' 50-patent portfolio.
+ * The definitive IP registry for Heady Systems' 50-patent portfolio.
  * Lives in vector memory — queryable by any system component.
  * 
  * Usage:
@@ -1362,7 +1362,7 @@ module.exports = {
  * Patent Docket: HS-058
  * Title: SYSTEM AND METHOD FOR CONTINUOUS SEMANTIC LOGIC GATES USING GEOMETRIC
  *        OPERATIONS IN HIGH-DIMENSIONAL VECTOR SPACES
- * Applicant: HeadySystems LLC  |  Inventor: Eric Haywood
+ * Applicant: Heady Systems LLC  |  Inventor: Eric Haywood
  *
  * Satisfies ALL 10 claims of HS-058.
  *

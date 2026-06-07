@@ -152,12 +152,13 @@ The `*-production` repos should have at minimum a read-only drift check — a jo
 | `Heady-pre-production` | 692 |
 | `sandbox-pre-production` | 564 |
 
-These are `**Fix:** Add a merge-conflict check to CI:
+These are `<<<<<<<`, `=======`, `>>>>>>>` markers left unresolved in committed code. They indicate the actual deployed codebase may contain duplicated or contradictory logic blocks, some of which could affect auth paths, config loading, or environment branching.
+
+**Fix:** Add a merge-conflict check to CI:
 ```yaml
 - name: Check for merge conflict markers
   run: |
-    if git grep -rn "^<<<<<<< \|^
-$\|^
+    if git grep -rn "^<<<<<<< \|^=======$\|^>>>>>>> " --include="*.js" --include="*.ts" --include="*.json" .; then
       echo "Merge conflict markers found. Resolve before merging."
       exit 1
     fi

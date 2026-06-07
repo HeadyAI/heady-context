@@ -29,7 +29,7 @@
     "HeadyWeb": {
       "name": "HeadyWeb - Main Web Platform",
       "version": "1.0.0",
-      "description": "Main web platform for HeadySystems",
+      "description": "Main web platform for Heady Systems",
       "build_size": "150.94 kB (gzipped: 48.68 kB)",
       "url": "https://headyme.com",
       "features": [

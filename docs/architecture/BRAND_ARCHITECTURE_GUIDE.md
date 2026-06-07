@@ -14,12 +14,12 @@
 <!-- ╚══════════════════════════════════════════════════════════════════╝
 <!-- HEADY_BRAND:END
 -->
-# HeadySystems Brand Architecture Guide
+# Heady Systems Brand Architecture Guide
 # Complete brand structure and domain mapping for the Heady ecosystem
 
 ## Executive Summary
 
-HeadySystems operates a unified brand ecosystem with clear separation between nonprofit and commercial entities, while maintaining consistent user experience and shared values across all properties.
+Heady Systems operates a unified brand ecosystem with clear separation between nonprofit and commercial entities, while maintaining consistent user experience and shared values across all properties.
 
 ## Brand Hierarchy
 

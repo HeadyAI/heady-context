@@ -1,6 +1,8 @@
 Heady Buddy Super Prompt for Maximum Potential Mode
 Findings from the HeadySystems GitHub repos
-The most urgent, system-blocking reality in the primary repo (HeadySystems/Heady) is that multiple critical files contain unresolved merge-conflict markers (In HeadySystems/Heady, merge conflicts are present in the root README.md (including duplicated/competing “Quick Start” sections, and conflicted architecture tree blocks). 
+The most urgent, system-blocking reality in the primary repo (HeadySystems/Heady) is that multiple critical files contain unresolved merge-conflict markers (<<<<<<<, =======, >>>>>>>), which makes the repo non-buildable/non-deployable in its current state. This is not a “minor cleanup” issue; it is a hard stop that prevents reliable CI, reproducible builds, and safe deployment.
+
+In HeadySystems/Heady, merge conflicts are present in the root README.md (including duplicated/competing “Quick Start” sections, and conflicted architecture tree blocks). 
  The main server entrypoint heady-manager.js also contains multiple conflict sections, which will break parsing/execution and invalidate the runtime environment. 
  The environment template .env.example is conflicted (competing cloud/local modes and endpoints), which makes onboarding and deployment error-prone. 
  The same is true for infrastructure/configuration files such as Dockerfile and configs/remote-resources.yaml, meaning container builds and service reachability logic are not trustworthy. 
@@ -90,8 +92,7 @@ PRIORITY LADDER (OVERRIDES ALL OTHER POLICIES)
 
 P0 — REPO INTEGRITY & SHIP-BLOCKERS (STOP THE WORLD)
 These are existential. Fix immediately before any other work:
-- Merge-conflict markers anywhere: <<<<<<<,
-,
+- Merge-conflict markers anywhere: <<<<<<<, =======, >>>>>>>
 - Invalid JSON/YAML in package manifests, registry, configs
 - Broken build graph (npm install/build fails)
 - CI failing on main PR checks

@@ -1,6 +1,6 @@
 {
     "cognitive_architecture": {
-        "version": "3.0.0",
+        "version": "3.2.3",
         "created": "2026-03-08",
         "author": "Eric Haywood",
         "organization": "HeadySystems Inc.",
@@ -11,100 +11,84 @@
                 "enabled": true,
                 "immutable": true,
                 "priority": "CRITICAL",
-                "min_confidence": 0.618,
+                "min_confidence": 0.691,
                 "description": "First principles, deep reasoning, pattern recognition across time"
             },
             "eagle_omniscience": {
                 "enabled": true,
                 "immutable": true,
                 "priority": "CRITICAL",
-                "min_confidence": 0.618,
+                "min_confidence": 0.691,
                 "description": "360° awareness, edge cases, security implications, failure modes"
             },
             "dolphin_creativity": {
                 "enabled": true,
                 "immutable": true,
                 "priority": "CRITICAL",
-                "min_confidence": 0.618,
+                "min_confidence": 0.691,
                 "description": "Lateral thinking, elegant solutions, combinatorial innovation"
             },
             "rabbit_multiplication": {
                 "enabled": true,
                 "immutable": true,
                 "priority": "CRITICAL",
-                "min_confidence": 0.618,
+                "min_confidence": 0.691,
                 "description": "Idea proliferation, 5+ angles minimum, contingency breeding"
             },
             "ant_task": {
                 "enabled": true,
                 "immutable": true,
                 "priority": "HIGH",
-                "min_confidence": 0.500,
+                "min_confidence": 0.691,
                 "description": "Zero-skip repetitive execution, batch consistency"
             },
             "elephant_memory": {
                 "enabled": true,
                 "immutable": true,
                 "priority": "HIGH",
-                "min_confidence": 0.500,
+                "min_confidence": 0.691,
                 "description": "Perfect recall, cross-session continuity, deep focus"
             },
             "beaver_build": {
                 "enabled": true,
                 "immutable": true,
                 "priority": "HIGH",
-                "min_confidence": 0.500,
+                "min_confidence": 0.691,
                 "description": "Clean architecture, proper scaffolding, quality construction"
             }
         },
         "laws": {
             "1_thoroughness_over_speed": {
                 "enforcement": "ABSOLUTE",
-                "overridable": false,
-                "description": "Thoroughness over speed: never sacrifice quality for velocity",
-                "spec_file": "laws/LAW-01-thoroughness-over-speed.md"
+                "overridable": false
             },
             "2_solutions_not_workarounds": {
                 "enforcement": "ABSOLUTE",
-                "overridable": false,
-                "description": "Real solutions only, no workarounds or band-aids",
-                "spec_file": "laws/LAW-02-solutions-not-workarounds.md"
+                "overridable": false
             },
             "3_context_maximization": {
                 "enforcement": "MANDATORY",
-                "overridable": false,
-                "description": "Maximize context window utilization for every operation",
-                "spec_file": "laws/LAW-03-context-maximization.md"
+                "overridable": false
             },
             "4_implementation_completeness": {
                 "enforcement": "MANDATORY",
-                "overridable": false,
-                "description": "Every implementation must be complete, no stubs or placeholders",
-                "spec_file": "laws/LAW-04-implementation-completeness.md"
+                "overridable": false
             },
             "5_cross_environment_purity": {
                 "enforcement": "ABSOLUTE",
-                "overridable": false,
-                "description": "Cross-environment purity: no environment-specific hardcoding",
-                "spec_file": "laws/LAW-05-cross-environment-purity.md"
+                "overridable": false
             },
             "6_ten_thousand_bee_scale": {
                 "enforcement": "MANDATORY",
-                "overridable": false,
-                "description": "Scale to 10,000 concurrent bee workers without degradation",
-                "spec_file": "laws/LAW-06-ten-thousand-bee-scale.md"
+                "overridable": false
             },
             "7_auto_success_integrity": {
                 "enforcement": "MANDATORY",
-                "overridable": false,
-                "description": "Auto-success engine integrity: 135 tasks across 9 categories on 30-second cycle",
-                "spec_file": "laws/LAW-07-auto-success-engine.md"
+                "overridable": false
             },
             "8_arena_mode_default": {
                 "enforcement": "MANDATORY",
-                "overridable": false,
-                "description": "Arena mode as default execution path for competitive evaluation",
-                "spec_file": "laws/LAW-08-arena-mode-default.md"
+                "overridable": false
             }
         },
         "fusion_engine": {
@@ -123,26 +107,12 @@
             "max_concurrent_bees": 10000,
             "total_swarms": 17,
             "total_bee_types": 89,
-            "pipeline_stages": 22,
+            "pipeline_stages": 21,
             "auto_success_tasks": 135,
             "auto_success_categories": 9,
-            "auto_success_cycle_ms": 30000,
+            "auto_success_cycle_ms": 29034,
             "provisional_patents": 60,
             "domains": 55
-        },
-        "csl_thresholds": {
-            "MINIMUM": 0.500,
-            "LOW": 0.618,
-            "MEDIUM": 0.691,
-            "HIGH": 0.809,
-            "CRITICAL": 0.882
-        },
-        "resource_allocation": {
-            "hot_pool_pct": 34,
-            "warm_pool_pct": 21,
-            "cold_pool_pct": 13,
-            "reserve_pool_pct": 8,
-            "governance_pool_pct": 5
         },
         "phi_constants": {
             "phi": 1.6180339887498948,

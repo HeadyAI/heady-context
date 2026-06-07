@@ -76,6 +76,5 @@
     "config/",
     "utils/",
     "providers/"
-  ],
-  "private": true
+  ]
 }

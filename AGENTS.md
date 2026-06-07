@@ -1,6 +1,6 @@
 # AGENTS.md — Heady AI Coding Agent Guidelines
 
-> Version: 1.1.0 | Updated: 2026-03-22 | Applies to all 78 Heady repos
+> Version: 1.0.0 | Updated: 2026-03-17 | Applies to all 78 Heady repos
 > Drop this file in the root of every repository for AI coding agent compatibility.
 
 ## Identity
@@ -15,7 +15,7 @@ This codebase belongs to **HeadySystems Inc.** — the Heady™ Latent-Space Ope
 | Layer | Tech | Notes |
 |-------|------|-------|
 | Backend | Node.js ESM, Express (Cloud Run), Hono (CF Workers) | No CommonJS `require()` |
-| Frontend | Vanilla HTML/CSS/JS | No React/Vue/Angular |
+| Frontend | Vanilla HTML/CSS/JS or React (when beneficial) | No Vue/Angular; React allowed when it benefits Heady |
 | Database | Neon Postgres + pgvector | UUID PKs, TIMESTAMPTZ, vector(1536) |
 | Cache | Upstash Redis | Namespace: `tenant:{id}:*` |
 | Auth | Firebase Auth + 27 OAuth | Cross-domain SSO via `auth.headysystems.com` |
@@ -101,65 +101,13 @@ npx wrangler pages deploy dist/
 
 ## Do Not
 
-- Add React, Vue, Angular, or any frontend framework
+- Add Vue, Angular, or other frontend frameworks (React is allowed when it is beneficial for Heady)
 - Use `localhost`, `127.0.0.1`, or hardcoded URLs
 - Write placeholder code, stubs, or TODO comments
 - Use magic numbers — derive from `PHI`, `PSI`, or `FIB[]`
 - Commit secrets to source control
 - Skip error handling or validation
 - Modify patent-locked files without review
-
-## HeadyMCP Tools (via `mcp-servers/heady-mcp-server.js`)
-
-Use these MCP tools for full ecosystem awareness:
-
-| Category | Tools | Description |
-|----------|-------|-------------|
-| **Brain** | `heady_status` `heady_brain_think` `heady_brain_status` `heady_patterns_list` `heady_registry_list` | System intelligence, pattern recognition, registry catalog |
-| **Files** | `heady_read_config` `heady_list_configs` `heady_project_tree` `heady_search` `heady_write_file` | Config management, project navigation, code search |
-| **Deploy** | `heady_deploy_status` `heady_deploy_run` `heady_deploy_start` `heady_deploy_stop` | Deployment lifecycle management |
-| **Health** | `heady_health_ping` `heady_deps_scan` `heady_secrets_scan` `heady_quickfix` `heady_code_stats` | Health checks, dependency scanning, auto-fixes |
-| **Git** | `heady_git_status` `heady_git_log` `heady_git_diff` `heady_conflicts_scan` | Source control awareness |
-| **Latent** | `heady_latent_record` `heady_latent_search` `heady_latent_status` | Latent-space memory system |
-| **CodeLock** | `heady_codelock_status` `heady_codelock_lock` `heady_codelock_audit` | Change control & audit trail |
-| **Translator** | `heady_translator_translate` `heady_translator_decode` `heady_translator_bridge` | Protocol translation |
-
-## Antigravity / Gemini Integration
-
-When operating inside Google Antigravity IDE:
-- **Workflows**: All `/heady-*` slash commands are in `~/.agents/workflows/`
-- **Skills**: AI Node attribution, Hybrid Drupal, and Production Domains skills in `~/.agents/skills/`
-- **MCP Servers**: 6 active — `cloudrun`, `firebase`, `genkit`, `GitKraken`, `github`, `perplexity-ask`
-- **Knowledge Items**: Check `~/.gemini/antigravity/knowledge/` for cached research and architecture docs
-- **Master System Prompt**: See `~/.agents/HEADY_SYSTEM_PROMPT.md` for unified cross-IDE directives
-
-## Key Workflows (Slash Commands)
-
-| Command | Description |
-|---------|-------------|
-| `/heady-translator` | Translate user intent into action — never ask obvious questions |
-| `/max-effort` | Zero limits, all resources, maximum parallel execution |
-| `/no-placeholders` | Zero fake data — every line real and functional |
-| `/heady-deploy-cloudrun` | Deploy any service to Cloud Run |
-| `/heady-battle-arena` | Multi-node competitive evaluation |
-| `/heady-emergency-protocol` | System breakage diagnostic and recovery |
-| `/heady-no-local` | Enforce production domains — zero localhost |
-| `/heady-connectors` | List and verify MCP connectors |
-| `/heady-secret-rotation` | Rotate exposed API keys safely |
-| `/heady-multi-remote-sync` | Sync all git remotes |
-
-## Current Priority (March 22, 2026)
-
-1. Configure GCP secrets in GitHub Actions (`GOOGLE_APPLICATION_CREDENTIALS`, `GCP_PROJECT_ID`)
-2. Merge 130+ Dependabot vulnerability alerts — `vuln-triage.yml` nightly auto-triage active
-3. Test coverage → 80% — `auto-test-gen.yml` tracks coverage on every PR
-4. Deploy Cloudflare Worker for heady-ai.com (currently 522)
-5. Rotate Anthropic API keys (4 revoked after exposure) — see `/heady-secret-rotation`
-6. Activate HeadyPatterns RL loop (`src/learning/heady-patterns.js`) in production
-7. Wire MCP servers (GitHub, Sentry, Neon, Cloudflare, Notion) into HeadyConductor
-8. Unify prompt system — consolidate CLAUDE.md, AGENTS.md, .windsurfrules into master prompt
-9. Fix headysystems.com broken links and deploy content updates
-10. Microkernel integration tasks v9.0.4 (25 tasks from `heady_sovereign_intelligence` KI)
 
 ---
 

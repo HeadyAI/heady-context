@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-22T20:34:14.770Z",
+  "generatedAt": "2026-03-03T11:07:29.079Z",
   "policyVersion": 1,
   "health": {
     "endpoint": "/api/antigravity/health",
@@ -11,27 +11,27 @@
   "enforcedGateway": "heady",
   "workspaceMode": "3d-vector",
   "autonomousMode": "optimized-autonomous",
-  "optimizationReportHash": "a7886b271fff057b9c6bc2ef7eca4858dccbce3ea5c8445bdd2b42d896296e33",
+  "optimizationReportHash": "1f3327a6ec481fdefb6d5f5aae4472906e7baaf23e7ebeba313c311b3079ae90",
   "topTemplates": [
     {
-      "id": "deploy-standard",
-      "score": 0
+      "id": "hb-deployment-operator-v1",
+      "score": 0.67375
     },
     {
-      "id": "deploy-canary",
-      "score": 0
+      "id": "hb-vector-memory-master-v1",
+      "score": 0.659167
     },
     {
-      "id": "review-security",
-      "score": 0
+      "id": "hb-orchestration-conductor-v1",
+      "score": 0.639167
     },
     {
-      "id": "optimize-perf",
-      "score": 0
+      "id": "hb-compliance-sentinel-v2",
+      "score": 0.6375
     },
     {
-      "id": "launch-presence",
-      "score": 0
+      "id": "hb-intelligence-analyst-v1",
+      "score": 0.634167
     }
   ],
   "samplePlan": {
@@ -50,96 +50,147 @@
     },
     "selectedTemplates": [
       {
-        "id": "deploy-standard",
-        "name": "Standard Deploy",
-        "type": "deploy",
+        "id": "hb-deployment-operator-v1",
+        "name": "Deployment Operator",
+        "zone": 3,
+        "skills": [
+          "git-push",
+          "hf-spaces-deploy",
+          "cloud-run-deploy",
+          "post-deploy-verify",
+          "rollback",
+          "canary-check"
+        ],
+        "workflows": [
+          "pre-deploy-gate",
+          "build-push",
+          "deploy-target",
+          "smoke-test",
+          "rollback-if-failed"
+        ],
+        "nodes": [
+          "BUILDER",
+          "CONDUCTOR",
+          "HCFP"
+        ],
+        "headyswarmTasks": [
+          "run-pre-deploy-gate",
+          "build-artifacts",
+          "push-to-github",
+          "deploy-hf-space",
+          "deploy-cloud-run",
+          "run-smoke-tests",
+          "rollback-deploy"
+        ],
         "situations": [
           "autonomous-deploy",
-          "digital-presence-launch"
+          "digital-presence-launch",
+          "edge-failover"
         ],
-        "skills": [
-          "deploy",
-          "monitor",
-          "rollback"
+        "healthEndpoint": "/api/deployment/health",
+        "projectionPolicy": "github-source-of-truth",
+        "bees": [
+          "deployment",
+          "sync-projection",
+          "ops",
+          "auto-success"
         ],
-        "workflows": [
-          "ci-cd-pipeline"
-        ],
-        "nodes": [
-          "HeadyConductor",
-          "HeadyBee"
-        ],
-        "headyswarmTasks": [
-          "vector-bootstrap",
-          "deploy-execute"
-        ],
-        "healthEndpoint": "/api/deploy/health",
-        "successRate": 0.95,
-        "avgDuration": 12000,
-        "usageCount": 150,
-        "complexity": 3,
-        "optimizationScore": 0
+        "optimizationScore": 0.67375
       },
       {
-        "id": "deploy-canary",
-        "name": "Canary Deploy",
-        "type": "deploy",
-        "situations": [
-          "autonomous-deploy"
-        ],
+        "id": "hb-vector-memory-master-v1",
+        "name": "Vector Memory Master",
+        "zone": 1,
         "skills": [
-          "deploy",
-          "canary-test",
-          "rollback"
+          "spatial-embedding",
+          "octree-management",
+          "cache-sync",
+          "pre-fetching",
+          "federation",
+          "hybrid-search"
         ],
         "workflows": [
-          "canary-pipeline"
+          "ingest-embed-cache",
+          "pre-fetch-loop",
+          "federation-sync",
+          "memory-health-check",
+          "receipts-audit"
         ],
         "nodes": [
-          "HeadyConductor",
-          "HeadyArena"
+          "BUDDY",
+          "PYTHIA",
+          "ATLAS"
         ],
         "headyswarmTasks": [
-          "canary-bootstrap",
-          "deploy-execute"
+          "spatial-embed-payload",
+          "octree-insert",
+          "redis-cache-push",
+          "pre-fetch-adjacent",
+          "validate-embedding-integrity",
+          "compact-cold-vectors"
         ],
-        "healthEndpoint": "/api/canary/health",
-        "successRate": 0.92,
-        "avgDuration": 18000,
-        "usageCount": 80,
-        "complexity": 5,
-        "optimizationScore": 0
+        "situations": [
+          "memory-compaction",
+          "data-migration",
+          "performance-tuning",
+          "autonomous-deploy"
+        ],
+        "healthEndpoint": "/api/vector-memory/health",
+        "projectionPolicy": "github-source-of-truth",
+        "bees": [
+          "memory",
+          "vector-ops",
+          "vector-templates",
+          "sync-projection"
+        ],
+        "optimizationScore": 0.659167
       },
       {
-        "id": "optimize-perf",
-        "name": "Performance Optimizer",
-        "type": "optimize",
-        "situations": [
-          "performance-optimization",
-          "autonomous-deploy"
-        ],
+        "id": "hb-orchestration-conductor-v1",
+        "name": "Orchestration Conductor",
+        "zone": 0,
         "skills": [
-          "profile",
-          "optimize",
-          "benchmark"
+          "agent-spawning",
+          "liquid-routing",
+          "supervisor-management",
+          "cloud-routing",
+          "spatial-mapping"
         ],
         "workflows": [
-          "perf-optimization-pipeline"
+          "spawn-supervisor",
+          "route-to-optimal-agent",
+          "rebalance-load",
+          "conductor-health-check",
+          "sse-broadcast"
         ],
         "nodes": [
-          "HeadyBee",
-          "HeadyHealth"
+          "CONDUCTOR",
+          "ARENA",
+          "BUDDY"
         ],
         "headyswarmTasks": [
-          "profile-execute",
-          "optimize-apply"
+          "spawn-agent",
+          "route-request",
+          "rebalance-agents",
+          "check-conductor-health",
+          "broadcast-event",
+          "sync-agent-state"
         ],
-        "healthEndpoint": "/api/perf/health",
-        "successRate": 0.88,
-        "avgDuration": 25000,
-        "usageCount": 60,
-        "complexity": 7,
-        "optimizationScore": 0
+        "situations": [
+          "autonomous-deploy",
+          "incident-response",
+          "performance-tuning",
+          "pipeline-repair"
+        ],
+        "healthEndpoint": "/api/orchestration/health",
+        "projectionPolicy": "github-source-of-truth",
+        "bees": [
+          "orchestration",
+          "agents",
+          "lifecycle",
+          "services"
+        ],
+        "optimizationScore": 0.639167
       }
     ],
     "requiredSwarmTasks": [

@@ -1,6 +1,6 @@
 ---
 # HEADY_BRAND:BEGIN
-# HeadySystems — BUDDY_KERNEL.md
+# Heady Systems — BUDDY_KERNEL.md
 # Liquid Latent OS Boot Document
 # HEADY_BRAND:END
 
@@ -60,7 +60,7 @@ semantic drift detection as the self-awareness layer.
 ### System Identity
 - **Name:** HeadyBuddy
 - **Role:** Primary AI Companion & Liquid Latent OS
-- **Entity:** HeadySystems
+- **Entity:** Heady Systems
 - **Architecture Class:** Hybrid MCP Server + AI Agent Orchestrator + Liquid Neural OS
 - **Core:** Node.js Express API Gateway (heady-manager.js, port 3300)
 - **Intelligence:** CSL Engine (384D/1536D geometric reasoning)
@@ -442,5 +442,3 @@ This kernel is loadable by:
 5. **Any MCP client** — via the CSL Service Integration façade
 6. **HeadyAutoContext** — as the enrichment pipeline configuration
 7. **HeadyMemory** — as the consolidation policy authority
-8. **OPTIMIZED_KERNEL_v5** — as the extended production reference (boot, process, edge, CSL/swarm, evolution optimizations) → [docs/OPTIMIZED_KERNEL_v5.md](docs/OPTIMIZED_KERNEL_v5.md)
-9. **MICROKERNEL_ARCHITECTURE** — seL4/QNX/MINIX3 microkernel theory mapping, φ-competitive scheduling, MCP ecosystem governance, Streamable HTTP transport → [docs/architecture/MICROKERNEL_ARCHITECTURE.md](docs/architecture/MICROKERNEL_ARCHITECTURE.md)

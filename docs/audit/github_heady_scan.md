@@ -27,7 +27,7 @@ Canonical org for the Heady™ Latent OS ecosystem. All repos created 2026-03-06
 | **headysystems** | Heady™ headysystems — Production Site | 3 | 2026-03-15 | https://github.com/HeadyMe/headysystems |
 | **headysystems-com** | Heady™ headysystems-com — Production Site | 3 | 2026-03-15 | https://github.com/HeadyMe/headysystems-com |
 | **headysystems-production** | Live Projection: headysystems.com — Autonomous deployment target | 3 | 2026-03-07 | https://github.com/HeadyMe/headysystems-production |
-| **HeadyWeb** | HeadySystems — HeadyWeb (frontend app) | 3 | 2026-03-15 | https://github.com/HeadyMe/HeadyWeb |
+| **HeadyWeb** | Heady Systems — HeadyWeb (frontend app) | 3 | 2026-03-15 | https://github.com/HeadyMe/HeadyWeb |
 
 ### HeadySystems Organization (11 public repos)
 Corporate mirror org. Several repos archived 2026-03-04.
@@ -248,8 +248,7 @@ PostgreSQL connection strings were committed in plain text in Jupyter notebooks.
 
 **Source:** [HeadyMe/Heady-Main README](https://github.com/HeadyMe/Heady-Main/blob/main/README.md)
 
-The README.md contains unresolved git merge conflict markers (`<<<<<<< HEAD` ... `>>>>>>>`) showing divergence between HEAD and commit `233933e0`. This indicates an incomplete merge or rebase during active rearchitecture. Any tool that parses README for metadata may misbehave.
-
+The README.md contains unresolved git merge conflict markers (`
 ### 4.5 MCP Configuration Wiring (heady-server token)
 
 **Source:** [HeadySystems/Heady-pre-production Issue #12](https://github.com/HeadySystems/Heady-pre-production/issues/12)

@@ -1,6 +1,6 @@
 # Heady Fifth-Wave Feature Specification Pack
 **Date:** 2026-03-17  
-**Author:** Eric Haywood / HeadySystems  
+**Author:** Eric Haywood / Heady Systems  
 **Version:** 1.0.0  
 **Wave:** Five  
 

@@ -183,6 +183,5 @@
   "bin": {
     "heady": "./bin/heady-cli.js",
     "create-heady-agent": "./bin/create-heady-agent.js"
-  },
-  "private": true
+  }
 }

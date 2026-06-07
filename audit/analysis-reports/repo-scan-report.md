@@ -64,7 +64,7 @@
 
 | Repo Name | Description | Notes |
 |---|---|---|
-| `Heady` | HeadySystems - Sacred Geometry Architecture v3.0.0 | **Archived Mar 4, 2026.** Read-only. 120 commits. Mostly Java (95.6%). |
+| `Heady` | Heady Systems - Sacred Geometry Architecture v3.0.0 | **Archived Mar 4, 2026.** Read-only. 120 commits. Mostly Java (95.6%). |
 | `Heady-pre-production` | Official HeadySystems Inc Repo | Pre-monorepo version |
 | `sandbox` | Heady Sandbox - Experimental Features | |
 | `sandbox-pre-production` | Area for Project Checkpoints and File Dumps | |

@@ -1,53 +1,50 @@
-# Heady™ NotebookLM Source Index
-**Version:** 8.0 | **Updated:** March 24, 2026
+# Heady™ NotebookLM Sources — Master Index
+**Version:** 5.0 | **Updated:** March 15, 2026
 
-## Quick Start
-Upload all 6 files below as sources in your NotebookLM notebook for a super comprehensive view of the entire Heady™ platform.
+> **Source of Truth**: This directory (`docs/notebook-sources/`) in the HeadyMe/Heady GitHub repository.
+> **Super Prompt Version:** v5.0 — Unified Cognitive Substrate (25 sections)
 
-## Source Files (Upload All 6)
+---
 
-| # | File | Focus | Size |
-|---|------|-------|------|
-| 1 | `01-heady-executive-overview.md` | Company, domains, metrics, underdog story, team | ~4KB |
-| 2 | `02-heady-apex-trading-intelligence.md` | Trading engine, FinOps, quantitative strategies | ~6KB |
-| 3 | `03-heady-ip-portfolio-and-valuation.md` | 51 patents, VALU Tensor, valuation, trademark | ~5KB |
-| 4 | `04-heady-service-catalog-and-capabilities.md` | 297 services, 64 MCP tools, 60+ skills, AI providers | ~6KB |
-| 5 | `05-heady-architecture-and-patterns.md` | 22-stage pipeline, CSL gates, swarm matrix, microkernel | ~8KB |
-| 6 | `06-heady-infrastructure-and-operations.md` | 16 remotes, GCP/Cloudflare, audit fabric, CI/CD, sprint stats | ~7KB |
+## How to Use with NotebookLM
 
-**Total:** ~36KB of structured, narrative-dense source material
+1. **Delete all existing sources** in your NotebookLM notebook (especially any from v3.0 or v4.0 era)
+2. **Add these 5 files** as new sources — upload from GitHub or paste the raw content:
 
-## GitHub Raw URLs
-```
-https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/01-heady-executive-overview.md
-https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/02-heady-apex-trading-intelligence.md
-https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/03-heady-ip-portfolio-and-valuation.md
-https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/04-heady-service-catalog-and-capabilities.md
-https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/05-heady-architecture-and-patterns.md
-https://raw.githubusercontent.com/HeadyAI/heady-context/master/docs/notebook-sources/06-heady-infrastructure-and-operations.md
-```
+| # | File | Content |
+|---|------|---------|
+| 1 | [01-heady-executive-overview.md](./01-heady-executive-overview.md) | Platform overview, $4.87M valuation, 9-site ecosystem, 7 cognitive archetypes, tech stack |
+| 2 | [02-heady-apex-trading-intelligence.md](./02-heady-apex-trading-intelligence.md) | Autonomous trading intelligence, Apex 3.0 rules, Quant swarm |
+| 3 | [03-heady-ip-portfolio-and-valuation.md](./03-heady-ip-portfolio-and-valuation.md) | **60+ patents**, code-to-patent mapping, trademark, valuation, pricing |
+| 4 | [04-heady-service-catalog-and-capabilities.md](./04-heady-service-catalog-and-capabilities.md) | 50+ services, 50+ skills, security pipeline, deployment targets, multi-model council |
+| 5 | [05-heady-architecture-and-patterns.md](./05-heady-architecture-and-patterns.md) | 21-stage pipeline, 17-swarm matrix, CSL gates, Liquid Latent OS, φ-governance, battle-sim |
 
-## Video/Audio Prompt Ideas
+## Key Facts (Current as of March 15, 2026)
 
-### Cinematic (deep, dramatic)
-- "Focus on the underdog story: one self-taught founder building a 60-patent AI operating system against trillion-dollar companies"
-- "Explain how sacred geometry and the golden ratio govern every parameter in the system, from retry backoff to swarm coordination"
-- "Tell the story of the 17 autonomous swarms — 89 bees working in geometric harmony without a central coordinator"
+- **Super Prompt Version**: v5.0 — Unified Cognitive Substrate
+- **Patent Applications**: 60+ provisional (HS-001 through HS-062+)
+- **Domains**: 12+ managed across 9 sites
+- **Services**: 50+ in production
+- **Skills**: 50+ agentic capabilities
+- **Swarms**: 17 autonomous swarm clusters
+- **Pipeline Stages**: 21 (HCFullPipeline v7.0)
+- **CSL Gates**: 8 geometric logic operations
+- **Cognitive Archetypes**: 7 (OWL, EAGLE, DOLPHIN, RABBIT, ANT, ELEPHANT, BEAVER)
+- **Unbreakable Laws**: 8 + 10 Master Directives
+- **MCP Tools**: 30+ specialized services
+- **Trademark**: HEADY — Serial 99680540 (Classes 9 & 42)
+- **Valuation**: $4.87M (Series A readiness)
 
-### Explainer (informative)
-- "Walk through the 22-stage pipeline from channel entry to knowledge distillation"
-- "Explain how 8 CSL gates replace Boolean logic with continuous vector operations"
-- "Cover the multi-remote sovereignty strategy — 16 git remotes across 4 orgs and Azure DevOps"
+## What Changed from v4.0 → v5.0
 
-## What Changed from v5.0 → v8.0
-- HCFullPipeline: v7.0 (21 stages) → v8.0 (22 stages with HeadyDistiller)
-- Services: 50+ → **297**
-- Files: ~36,740 → **51,358**
-- MCP tools: 30+ → **64** (fully wired)
-- Remotes: 3 → **16** (4 GitHub orgs + Azure DevOps)
-- NEW: Three-Ring KV Audit System
-- NEW: HeadyMCP first vertical product
-- NEW: VALU Tensor Core patent
-- NEW: Infrastructure & Operations source document
-- NEW: March 20-24 consolidation sprint stats (1,431 commits, 53K files)
-- Patent count: 51 patents
+| Aspect | v4.0 (March 6) | v5.0 (March 15) |
+|---|---|---|
+| Pipeline | 9-stage HCFullPipeline v3.0 | 21-stage HCFullPipeline v7.0 |
+| Swarms | Not formalized | 17-Swarm Matrix v4.0 |
+| Intelligence | Monte Carlo + patterns | CSL geometric gates (8 ops) |
+| OS Kernel | Not defined | Liquid Latent OS (6-layer boot) |
+| Memory | Single tier | 3-tier (T0/T1/T2) with HNSW |
+| Patents | 51+ | 60+ |
+| Design System | Not documented | φ-scaled dark premium CSS |
+| Battle-Sim | Not defined | 9-stage competitive pipeline |
+| Governance | Manual rules | φ-scaled with adaptive gate temperature |

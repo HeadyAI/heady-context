@@ -2717,7 +2717,7 @@ module.exports = {
  * Patent Docket: HS-058
  * Title: SYSTEM AND METHOD FOR CONTINUOUS SEMANTIC LOGIC GATES USING GEOMETRIC
  *        OPERATIONS IN HIGH-DIMENSIONAL VECTOR SPACES
- * Applicant: HeadySystems LLC  |  Inventor: Eric Haywood
+ * Applicant: Heady Systems LLC  |  Inventor: Eric Haywood
  *
  * Satisfies ALL 10 claims of HS-058.
  *

@@ -109,4 +109,4 @@ Cascade is an agentic AI coding assistant designed for high-performance pair pro
 - **Zero-defect guarantee** for implemented solutions
 
 ---
-*Cascade - Engineered by HeadySystems, 2026*
+*Cascade - Engineered by Heady Systems, 2026*

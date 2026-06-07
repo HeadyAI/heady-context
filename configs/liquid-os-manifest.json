@@ -1,6 +1,6 @@
 {
   "name": "Heady™ Liquid Latent OS",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "updated": "2026-03-17",
   "phi": 1.6180339887498949,
   "psi": 0.6180339887498949,
@@ -10,7 +10,7 @@
     "workers": 22,
     "sites": 47,
     "pages_projects": 10,
-    "colab_runtimes": 3,
+    "colab_runtimes": 4,
     "patents_provisional": 60,
     "claims": 59
   },
@@ -50,7 +50,8 @@
     "colab_runtimes": [
       { "id": "colab-a", "region": "us-east", "gpu": "A100", "subscription": "pro_plus", "focus": "realtime-inference", "fib_concurrency": 34, "vector": [0, 1.618, 0] },
       { "id": "colab-b", "region": "us-west", "gpu": "A100", "subscription": "pro_plus", "focus": "template-optimization", "fib_concurrency": 21, "vector": [0, 1.0, 0.618] },
-      { "id": "colab-c", "region": "eu-west", "gpu": "A100", "subscription": "pro_plus", "focus": "swarm-burst", "fib_concurrency": 13, "vector": [0.618, 1.618, 0] }
+      { "id": "colab-c", "region": "eu-west", "gpu": "A100", "subscription": "pro_plus", "focus": "swarm-burst", "fib_concurrency": 13, "vector": [0.618, 1.618, 0] },
+      { "id": "colab-d", "region": "us-central", "gpu": "A100", "subscription": "pro_plus", "focus": "intelligence-and-learning", "fib_concurrency": 8, "dedicated": true, "vector": [1.618, 1.618, 1.618] }
     ],
     "vertex_ai": {
       "project": "heady-ai",

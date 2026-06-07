@@ -1,7 +1,7 @@
 # 🧠 HEADY ECOSYSTEM — MASTER CONTEXT DOCUMENT
 ## Deep Scan Report • March 8, 2026
 
-**Project**: HeadySystems v3.0.0  
+**Project**: Heady Systems v3.0.0  
 **Owner**: Eric Haywood | **Started**: 2024  
 **Entities**: HeadyConnection Inc. (nonprofit) + HeadySystems Inc. (C-Corp)  
 **Mission**: Intelligent, parallel, dynamically distributed, self-aware, self-optimizing AI execution environment using Sacred Geometry design principles for wealth redistribution and global wellbeing.

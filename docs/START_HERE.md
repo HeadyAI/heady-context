@@ -1,4 +1,4 @@
-# START HERE — HeadySystems Master Build Guide
+# START HERE — Heady Systems Master Build Guide
 
 > **For Windsurf/Cascade:** Point to this file for full project context and build instructions.
 > **Version:** 5.0.0 | **Updated:** 2026-03-10
@@ -375,4 +375,4 @@ When working with Cascade in Windsurf, use these patterns:
 
 ---
 
-*Built with Sacred Geometry by HeadySystems*
+*Built with Sacred Geometry by Heady Systems*

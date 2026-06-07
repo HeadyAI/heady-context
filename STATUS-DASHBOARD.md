@@ -1,4 +1,4 @@
-# 📊 HeadySystems — Status Dashboard
+# 📊 Heady Systems — Status Dashboard
 *Auto-generated: 2026-03-17T21:07:00-06:00*
 
 ## 🟢 System Health

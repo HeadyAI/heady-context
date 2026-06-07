@@ -1,126 +1,78 @@
 # Heady™ Service Catalog & Capabilities — NotebookLM Source
-**Version:** 8.0 | **Updated:** March 24, 2026
+**Version:** 5.0 | **Updated:** March 15, 2026
 
-## Service Architecture Overview
-The Heady platform runs 297 services across Google Cloud Run and Cloudflare Workers, orchestrated by the HCFullPipeline v8.0 and the 17-Swarm Matrix. All services are containerized Node.js applications deployed to Cloud Run (project: heady-ai, region: us-east1) with edge routing through 17 Cloudflare Workers.
+## 50+ Services Inventory
 
-## Core Cloud Run Services
-
-### Gateway & Routing
+### Core Intelligence Services
 | Service | Purpose |
 |---------|---------|
-| heady-manager (port 3300) | Central API gateway + AutoContext orchestrator |
-| headyme-site | Dynamic multi-site server — renders all 12 branded domains |
-| api-gateway | Structured pino logging, request routing |
-| liquid-gateway-worker | Main Cloudflare traffic routing for all domains |
+| heady-brain | Central AI reasoning engine |
+| heady-brains | Multi-brain federation |
+| heady-soul | Orchestration core |
+| heady-conductor | Pipeline conductor |
+| heady-infer | Inference engine (21 files) |
+| heady-embed | Embedding service (11 files) |
+| heady-memory | Memory persistence (3-tier: T0/T1/T2) |
+| heady-vector | Vector operations (16 files) |
+| heady-projection | Vector projection engine (22 files) |
 
-### Authentication & Security
+### Agent & Bee Services
 | Service | Purpose |
 |---------|---------|
-| auth-session-server | Firebase Auth + JWT sessions + RBAC + Neon Postgres |
-| heady-auth | Full auth service with MFA, RBAC engine, admin routes |
-| HeadyVault | Secrets lifecycle — GCP Secret Manager + 1Password sync |
-| edge-auth-worker | Zero-trust edge authorization |
+| heady-bee-factory | Dynamic bee creation (30+ bee types) |
+| heady-hive | Bee coordination hub |
+| heady-orchestration | 17-swarm orchestration |
+| heady-federation | Agent federation across clouds |
 
-### Intelligence & AI
+### Security, Monitoring & User-Facing
 | Service | Purpose |
 |---------|---------|
-| heady-buddy-api | LLM routing + pgvector + chat storage |
-| csl-engine | Continuous Semantic Logic — 8 geometric gates |
-| auto-success-engine | Self-healing loop with φ⁷ heartbeat (29,034ms) |
-| heady-conductor | Orchestration conductor — mechanism layer |
-| policy-engine | HeadyMCP per-action policy evaluation |
+| heady-guard | Security enforcement (20 files), 8 sanitization layers |
+| heady-governance | Policy enforcement, audit logging |
+| heady-health | Health monitoring (17 files), φ-scaled heartbeat |
+| heady-eval | Evaluation engine (20 files), arena scoring |
+| heady-web | Web platform (155 files), 9-site ecosystem |
+| heady-buddy | Chat companion widget, cross-device sync |
+| heady-onboarding | User onboarding (71 files) |
+| heady-task-browser | Task management UI |
+| heady-ui | Admin dashboard |
 
-### Communication & Integration
+### Pipeline, Gateway & Integrations
 | Service | Purpose |
 |---------|---------|
-| heady-discord-bot | Discord bot (Cloud Run, scaffold mode) |
-| heady-huggingface-gateway | HuggingFace model/dataset gateway |
-| notification-service | Webhook and notification delivery |
-| mcp-server | MCP Streamable HTTP server (64 tools) |
+| auto-success-engine | φ-scaled auto-success (144 tasks, 13 categories, 29,034ms) |
+| hcfullpipeline-executor | 21-stage pipeline execution |
+| ai_router | Multi-model AI routing (Claude/GPT/Gemini/O1/Sonar/Groq) |
+| model_gateway | CSL-scored model selection |
+| mcp_server | MCP protocol server (streamable-http, SSE, WebSocket, stdio) |
+| perplexity_mcp | Perplexity Enterprise Max MCP |
+| heady-midi | MIDI/creative interface (24 files) |
 
-### Pipeline & Orchestration
-| Service | Purpose |
-|---------|---------|
-| hcfullpipeline-executor | 22-stage pipeline task execution |
-| battle-sim-task-orchestrator | 9-stage competitive pipeline |
-| heady-distiller | Stage 21 — knowledge distillation |
-| swarm-coordinator | 17-swarm matrix coordination |
+**Every service MUST have:** /health endpoint, HeadyAutoContext enrichment, φ-scaled timeouts, structured logging with correlation IDs, OpenTelemetry spans, bulkhead pattern.
 
-## Cloudflare Workers (17)
-| Worker | Purpose |
-|--------|---------|
-| liquid-gateway-worker | Primary domain routing (host-based) |
-| api-gateway | Edge API routing |
-| auth-service | Edge authentication |
-| edge-auth-worker | Edge authorization |
-| edge-composer | Edge content composition |
-| edge-proxy | Edge reverse proxy |
-| heady-buddy-worker | AI companion edge logic |
-| heady-mcp-worker | MCP protocol handler |
-| mcp-transport | MCP transport layer (SSE/WebSocket/Streamable HTTP) |
-| worker-heady-router | DNS-level routing |
-| heartbeat.js | Health monitoring |
+## 50+ Agentic Skills
 
-## 64 MCP Tools (HeadyMCP Server)
-The MCP server exposes 64 tools organized by domain:
+### Core Skills (16)
+heady-bee-agent-factory, heady-agent-orchestration, heady-liquid-gateway, heady-knowledge-ingestion, vector-memory-graph-rag, phi-exponential-backoff, circuit-breaker-resilience, self-awareness-telemetry, heady-memory-knowledge-os, heady-companion-memory, heady-gateway-routing, heady-ide-control-plane, heady-mcp-streaming-interface, heady-reliability-orchestrator, heady-self-healing-lifecycle, heady-research.
 
-### Core Tools (16)
-health, echo, system-status, version, capabilities, config-get, config-set, log-query, metric-query, trace-query, secret-get, secret-set, audit-log, event-emit, event-subscribe, rate-limit-check
+### Extended Skills (35+)
+heady-auto-flow, heady-battle-arena, heady-bee-swarm-ops, heady-cloud-orchestrator, heady-code-generation, heady-cognitive-runtime, heady-connector-vault, heady-csl-engine, heady-deep-scan, heady-deployment, heady-drift-detection, heady-drupal-headless-ops, heady-edge-ai, heady-embedding-router, heady-fintech-trading, heady-graph-rag-memory, heady-hybrid-vector-search, heady-incident-ops, heady-intelligence-analytics, heady-middleware-armor, heady-midi-creative, heady-monetization-platform, heady-nonprofit-ops, heady-perplexity, heady-phi-math-foundation, heady-pqc-security, heady-prompt-orchestration, heady-sandbox-execution, heady-security-audit, heady-semantic-backpressure, heady-task-decomposition, heady-trading-intelligence, heady-vector-projection, heady-voice-relay, heady-vsa-hyperdimensional.
 
-### Engine Tools (16)
-csl-gate, csl-embeddings, csl-similarity, vector-store, vector-search, vector-delete, memory-tier-get, memory-tier-set, pipeline-run, pipeline-status, swarm-dispatch, bee-spawn, bee-status, arena-compete, monte-carlo-sim, distill
+## Security & Authentication
+- OAuth 2.0 via Cloudflare Edge (Hono), full redirect-based flow
+- Firebase Auth: Google OAuth + Email/Password + Anonymous
+- Session Minting: sk_heady_<uuid> keys in KV (7-day TTL)
+- CSRF Protection: Non-deterministic state tokens (5-min TTL)
+- Cross-Domain Auth: Shared tokens via relay iframe + postMessage
+- 8 Sanitization Layers: Zod → ESLint → DOMPurify → SQL Injection → XSS (CSP) → SSRF → Path Traversal → TruffleHog
 
-### Service Tools (16)
-deploy-service, service-health, service-scale, worker-deploy, dns-configure, ssl-provision, auth-token-exchange, auth-verify, session-create, session-invalidate, notification-send, webhook-register, file-upload, file-download, db-query, cache-invalidate
+## Deployment Targets
+| Platform | Identifier | Region |
+|----------|-----------|--------|
+| Cloud Run | gen-lang-client-0920560496 | us-east1 |
+| Cloudflare Workers | Account 8b1fa38f282c691423c6399247d53323 | Global edge |
+| Firebase | Project gen-lang-client-0920560496 | — |
+| GitHub | github.com/HeadyMe | — |
 
-### Billing Tools (16)
-stripe-meter-event, stripe-customer-create, stripe-subscription-create, usage-report, cost-forecast, payout-calculate, invoice-generate, treasury-balance, revenue-report
-
-## 60+ Agent Skills
-
-### Core Skills
-heady-deep-scan, heady-memory-ops, heady-code-generation, heady-deployment, heady-research, heady-multi-model, heady-security-audit
-
-### Architecture Skills
-heady-liquid-gateway, heady-edge-ai, heady-mcp-streaming-interface, heady-gateway-routing, heady-ide-control-plane
-
-### Memory & Knowledge
-heady-companion-memory, heady-memory-knowledge-os, heady-graph-rag-memory, heady-hybrid-vector-search, heady-embedding-router
-
-### Operations
-heady-bee-swarm-ops, heady-incident-ops, heady-reliability-orchestrator, heady-self-healing-lifecycle, heady-drift-detection
-
-### Security
-heady-pqc-security, heady-mcp-gateway-zero-trust, heady-middleware-armor
-
-### Specialized
-heady-csl-engine, heady-phi-math-foundation, heady-battle-arena, heady-trading-intelligence, heady-voice-relay, heady-midi-creative, heady-monetization-platform
-
-## AI Provider Integration
-
-### Supported Providers
-| Provider | Models | Use Case |
-|----------|--------|----------|
-| OpenAI | gpt-5.4-xhigh-fast | Primary code generation, chat |
-| Anthropic | claude-opus-4.6-thinking | Deep reasoning, analysis |
-| Google | gemini-3.1-pro-preview, gemini-3-flash-preview | Fast inference, multimodal |
-| Groq | llama-3.3-70b-versatile | Ultra-low latency |
-| Perplexity | sonar-pro, sonar-deep-research | Web search, citations |
-| Hugging Face | Various | Embeddings, specialized models |
-
-### Routing Strategies
-- **fastest-wins**: Race providers, return first response
-- **race_and_failover**: Race top 2, failover to next on failure
-- **cost-optimized**: Route to cheapest provider meeting quality threshold
-- **CSL-gated**: Cosine similarity scoring to select best provider per task
-- **Thompson Sampling**: Multi-armed bandit with Beta distribution posteriors
-
-## Database & Storage Stack
-| System | Purpose |
-|--------|---------|
-| Neon Postgres + pgvector | Primary data + 1536D vector embeddings |
-| Upstash Redis | Session cache, rate limiting, audit ring 2 |
-| Cloudflare KV | Edge state, audit ring 1 |
-| GCP Secret Manager | Production secrets management |
-| HeadyMemory 3-tier | T0 working (21h) / T1 short-term (47h) / T2 long-term (144h) |
+## Multi-Model AI Council
+Claude Opus 4.6, GPT-5.4, Gemini 3.1 Pro, O1 Pro, Sonar Pro, Groq, Workers AI. All routing via CSL scoring — no priority-based model selection.

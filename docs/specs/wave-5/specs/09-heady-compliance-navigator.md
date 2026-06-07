@@ -2,7 +2,7 @@
 **Wave:** Five  
 **Version:** 1.0.0  
 **Date:** 2026-03-17  
-**Author:** Eric Haywood / HeadySystems  
+**Author:** Eric Haywood / Heady Systems  
 **Primary Surface:** headyme.com (Compliance panel) + headyapi.com  
 **Heady Domain Anchor:** headyme-core, headyapi-core, heady-sentinel, heady-logs  
 

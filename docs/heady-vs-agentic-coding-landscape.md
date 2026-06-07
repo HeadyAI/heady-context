@@ -29,7 +29,7 @@
 
 # Heady Agentic Coding vs. The Landscape
 
-> **How HeadySystems' Sacred Geometry Architecture Compares to Every Major Agentic Coding Platform — With Financial Analysis**
+> **How Heady Systems' Sacred Geometry Architecture Compares to Every Major Agentic Coding Platform — With Financial Analysis**
 
 *Last Updated: February 2026*
 
@@ -76,7 +76,7 @@ The core shift: AI coding tools are no longer autocomplete engines. They are **a
 
 ### 3.1 Architecture — Sacred Geometry vs. Flat Pipelines
 
-| Dimension | HeadySystems | Typical Agentic Platform |
+| Dimension | Heady Systems | Typical Agentic Platform |
 |---|---|---|
 | **Architecture** | Multi-node Sacred Geometry (JULES, OBSERVER, BUILDER, ATLAS, PYTHIA) | Single model + prompt chain |
 | **Orchestration** | `heady-manager.js` — MCP Protocol server with named AI nodes | API wrapper around a foundation model |
@@ -127,7 +127,7 @@ The core shift: AI coding tools are no longer autocomplete engines. They are **a
 | **Windsurf Pro** | $15 | $180 | AI IDE + credits |
 | **Devin** | $500 | $6,000 | Autonomous agent (limited seats) |
 | **Replit Core** | $20 | $240 | Browser IDE + Agent + $25 credits/mo |
-| **HeadySystems** | ~$7–$19* | ~$84–$228* | Full 5-node architecture, self-hosted, unlimited |
+| **Heady Systems** | ~$7–$19* | ~$84–$228* | Full 5-node architecture, self-hosted, unlimited |
 
 *\*Heady cost = Render.com hosting (Free–Starter tier) + optional Hugging Face inference. No per-seat licensing. No per-request metering. You own the infrastructure.*
 
@@ -140,7 +140,7 @@ The core shift: AI coding tools are no longer autocomplete engines. They are **a
 | **Cursor Business** | $400 | $4,800 | $480 |
 | **Windsurf Enterprise** | $600+ | $7,200+ | $720+ |
 | **Devin** | $5,000+ | $60,000+ | $6,000+ |
-| **HeadySystems** | ~$19–$50* | ~$228–$600* | ~$23–$60* |
+| **Heady Systems** | ~$19–$50* | ~$228–$600* | ~$23–$60* |
 
 *\*Heady cost = Render.com Standard plan + Postgres. No per-seat multiplier. All 10 developers access the same MCP gateway. Nodes scale horizontally, not per-seat.*
 
@@ -152,7 +152,7 @@ The core shift: AI coding tools are no longer autocomplete engines. They are **a
 | **Cursor Enterprise** | ~$48,000 | Custom pricing, flat-rate |
 | **Windsurf Enterprise** | ~$72,000+ | Per-seat, no volume discounts published |
 | **Devin** | $600,000+ | Autonomous agent, premium pricing |
-| **HeadySystems** | ~$2,400–$6,000* | Render Pro plan + managed Postgres + HF inference budget |
+| **Heady Systems** | ~$2,400–$6,000* | Render Pro plan + managed Postgres + HF inference budget |
 
 *\*Heady's cost structure is infrastructure-based, not seat-based. 100 developers cost the same as 10 if the compute can handle the load. Horizontal scaling on Render is predictable and transparent.*
 
@@ -172,7 +172,7 @@ Every major platform — Copilot, Cursor, Windsurf, Devin — operates on this m
 
 Heady is not a coding assistant. It is a **coding architecture** — a self-hosted, multi-agent MCP platform that you own, extend, and control.
 
-| Philosophy | Agentic Platforms | HeadySystems |
+| Philosophy | Agentic Platforms | Heady Systems |
 |---|---|---|
 | **Ownership** | Vendor-owned | Developer-owned |
 | **Scaling Model** | Per-seat licensing | Infrastructure-based |
@@ -261,8 +261,8 @@ Heady is not a coding assistant. It is a **coding architecture** — a self-host
 - **Devin Pricing**: devin.ai ($500/mo individual)
 - **Replit Pricing**: replit.com/pricing ($20/mo Core)
 - **AI Coding Agent Reviews**: Faros AI "Best AI Coding Agents for 2026", Amplifi Labs "Agentic AI Coding Assistants 2025", DX "AI Coding Assistant Pricing 2025"
-- **HeadySystems**: Internal architecture docs, `render.yaml`, `heady-manager.js`, HeadyAcademy node registry
+- **Heady Systems**: Internal architecture docs, `render.yaml`, `heady-manager.js`, HeadyAcademy node registry
 
 ---
 
-*Proprietary — HeadySystems | Sacred Geometry :: Organic Systems :: Breathing Interfaces*
+*Proprietary — Heady Systems | Sacred Geometry :: Organic Systems :: Breathing Interfaces*

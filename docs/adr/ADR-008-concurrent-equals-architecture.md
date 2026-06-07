@@ -3,7 +3,7 @@
    **Status:** Accepted
    **Date:** 2026-01-15
    **Author:** Eric Haywood
-   **HeadySystems Inc. — Sacred Geometry v4.0**
+   **Heady Systems Inc. — Sacred Geometry v4.0**
 
    ## Problem
 

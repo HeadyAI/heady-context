@@ -233,5 +233,5 @@ desktop-overlay/
 
 ## License
 
-Part of the HeadySystems ecosystem.
+Part of the Heady Systems ecosystem.
 Sacred Geometry Architecture — Organic Systems — Breathing Interfaces.
