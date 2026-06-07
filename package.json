@@ -1,7 +1,7 @@
 {
   "name": "heady-latent-os",
   "version": "5.0.0",
-  "description": "Self-aware, self-correcting intelligence infrastructure \u2014 the Heady Latent OS",
+  "description": "Self-aware, self-correcting intelligence infrastructure — the Heady Latent OS",
   "main": "heady-manager.js",
   "engines": {
     "node": ">=22.0.0"
@@ -43,7 +43,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.82.0",
+    "@anthropic-ai/sdk": "^0.102.0",
     "@google/genai": "^1.48.0",
     "@google/generative-ai": "^0.24.1",
     "@heady-ai/phi-math": "file:./packages/phi-math",
@@ -63,20 +63,20 @@
     "eventsource": "^3.0.2",
     "express": "^5.1.0",
     "express-rate-limit": "^8.3.2",
-    "rate-limit-redis": "^4.2.0",
     "groq-sdk": "^0.37.0",
     "helmet": "^8.1.0",
     "ioredis": "^5.4.1",
     "js-yaml": "^4.1.1",
     "jsonwebtoken": "^9.0.3",
     "langchain": "^1.2.35",
-    "node-cron": "^3.0.2",
+    "node-cron": "^4.2.1",
     "ollama": "^0.5.11",
     "openai": "^4.68.0",
     "pg": "^8.20.0",
     "pino": "^10.3.1",
     "pino-pretty": "^13.1.3",
     "prom-client": "^15.1.3",
+    "rate-limit-redis": "^4.2.0",
     "replace-in-file": "^8.4.0",
     "swagger-ui-express": "^5.0.1",
     "uuid": "^13.0.0",
