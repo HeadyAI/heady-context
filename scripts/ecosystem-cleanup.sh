@@ -40,8 +40,9 @@ ARCHIVE_REPOS=(
   HeadyAI/Heady-Main-ddb9351d HeadyAI/Heady-Staging-2e6b579b
   HeadyAI/Heady-Testing-83c4b580 HeadyAI/Heady-Testing-13ca6b12
   HeadySystems/sandbox HeadyAI/heady-clone
-  HeadySystems/HeadyAutoContext   # owner: rebuild is canonical context SoT; HeadyAutoContext downstream → archive (confirm)
 )
+# NOTE: heady-context AND HeadyAutoContext are KEPT as curated corpora (owner
+# decision) — distinct from the rebuild monorepo's runtime SoT. Not archived.
 echo "── ARCHIVE duplicate clones (${#ARCHIVE_REPOS[@]}) ──"
 for r in "${ARCHIVE_REPOS[@]}"; do run gh repo archive "$r" --yes; done
 
