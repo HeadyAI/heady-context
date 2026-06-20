@@ -64,7 +64,32 @@ Criteria: **KEEP** = active source of truth or a live projection target;
 retention window per the lifecycle gates).
 
 ### 3a. ELIMINATE candidates (already archived; superseded — verify no unique history, then delete after retention)
-- **Battle-arena bake-offs (all archived):** `HeadyAI/heady-rebuild-{claude,gemini,gpt54,groq,jules,codex,perplexity,headycoder,huggingface}` — one-shot model comparisons; their winner already folded into `rebuild`.
+- **Battle-arena bake-offs (all archived):** `HeadyAI/heady-rebuild-{claude,gemini,gpt54,groq,jules,codex,perplexity,headycoder,huggingface}` — the 9 candidates of the model rebuild contest (see provenance below). Safe to eliminate: each candidate's *winning angle* was already extracted into `rebuild`.
+
+#### Battle Arena provenance (why these 9 are safe to eliminate)
+`battle-synthesis-report.json` (2026-03-06, in `heady-ai`) records a 9-way model
+rebuild competition (Stage 9 "ARENA": *winner > runner-up by ≥5%*). Crucially it
+was **not winner-take-all** — it was a synthesis. Each candidate won on a
+different axis, and the best component of each was folded into `rebuild`:
+
+| Candidate | Winning angle (extracted into `rebuild`) | Adopted? |
+|-----------|------------------------------------------|----------|
+| Claude | ServiceContainer — DI + ordered lifecycle boot | ✅ (lead pattern) |
+| GPT-5.4 | FunctionRegistry — self-documenting, LLM-callable API | ✅ |
+| Gemini | ModuleGraph — topological boot, circular-dep detection | ✅ |
+| Perplexity | Security-first middleware (Helmet, rate-limit, correlation IDs) | ✅ |
+| Codex | TDD patterns — 100% domain-middleware coverage | ✅ |
+| HeadyCoder | ModelRouter — task-specific model selection | ✅ |
+| Groq | Single-file proof — "minimum viable Heady is 15 lines" | ▢ noted, not integrated |
+| Jules | Express router/controller separation | ▢ noted, not integrated |
+| HuggingFace | Open-source HF inference (no API cost) | ▢ noted, not integrated |
+
+**Winner/loser is angle-dependent** (the CSL principle: logic is the cosine
+between vectors — rotate the projection axis and the ranking flips). There is no
+absolute loser of *value*: Groq/Jules/HF "lost" only the whole-repo contest, while
+each still won its own axis. The repos are losers of **redundancy**, not worth —
+their winning projection already lives in `rebuild`, so the husk can go. That is
+the clean justification for elimination.
 - **Pre-rebuild monorepos/hubs (archived):** `HeadySystems/{HeadyMonorepo, Heady, Heady-pre-production, sandbox-pre-production, CascadeProjects, Projects, main, ai-workflow-engine, heady-automation-ide, headybuddy-web, HeadyMe}`.
 
 ### 3b. ARCHIVE candidates (active but redundant; freeze with a pointer to canonical)
