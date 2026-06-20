@@ -120,8 +120,17 @@ duplicate-source-of-truth to collapse.
 - `heady-ai/main` history triage + freeze.
 - These can be **emitted as a reviewed command script** for an admin to run; I cannot execute them here.
 
+## 6a. Owner decisions recorded
+- **Canonical context = `heady-ai` @ `rebuild`** (owner: "Heady-AI"). The monorepo
+  is the source of truth; `heady-context` and `HeadyAutoContext` are **downstream**.
+  → `HeadySystems/HeadyAutoContext` is slated to **ARCHIVE** (added to the Tier C
+  script's archive list pending final go); `heady-context` remains as the curated
+  context corpus projected from `rebuild`. (Confirm before the archive runs.)
+- **Execution = Both A + C** (owner). Tier A manifest produced (`FILE_MANIFEST.md`);
+  Tier C script authored (`scripts/ecosystem-cleanup.sh`, dry-run by default).
+
 ## 7. Decisions required from the owner
-1. **HeadyAutoContext vs heady-context** — which is canonical; archive the other?
+1. **HeadyAutoContext vs heady-context** — RESOLVED: rebuild canonical; HeadyAutoContext archives (confirm).
 2. **headydocs vs heady-docs** — consolidate to which?
 3. **heady-production** — confirm history is migrated to `rebuild` so it can be archived.
 4. Approve Tier A execution (run scanners + commit manifest), and grant/route the access needed for Tier C.
